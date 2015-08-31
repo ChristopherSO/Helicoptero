@@ -13,8 +13,12 @@ import framework.CambiadorDeEstados;
 public class CambiadorDobleGravedad extends CambiadorDeEstados {
 
     // Constructor
-    public CambiadorDobleGravedad(int x, int y) {
-        super(x, y, 120, 120, 60, 8);
+    public CambiadorDobleGravedad(int x, int y, int alturaPanel) {
+        super(x, 120, 120, 60, 8);
+
+        // Modificar el "y" para que no se salga de la pantalla abajo
+        y = y * (alturaPanel - this.getRadio()*2) / alturaPanel;
+        this.setY(y);
 
         // Para el texto
         Paint fuenteTexto = new Paint();

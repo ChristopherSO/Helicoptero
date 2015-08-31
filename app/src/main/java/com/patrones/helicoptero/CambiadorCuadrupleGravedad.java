@@ -13,8 +13,12 @@ import framework.CambiadorDeEstados;
 public class CambiadorCuadrupleGravedad extends CambiadorDeEstados {
 
     // Constructor
-    public CambiadorCuadrupleGravedad(int x, int y) {
-        super(x, y, 180, 180, 90, 6);
+    public CambiadorCuadrupleGravedad(int x, int y, int alturaPanel) {
+        super(x, 180, 180, 90, 6);
+
+        // Modificar el "y" para que no se salga de la pantalla abajo
+        y = y * (alturaPanel - this.getRadio()*2) / alturaPanel;
+        this.setY(y);
 
         // Para el texto
         Paint fuenteTexto = new Paint();

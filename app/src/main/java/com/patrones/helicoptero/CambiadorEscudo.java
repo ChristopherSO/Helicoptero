@@ -13,8 +13,12 @@ import framework.CambiadorDeEstados;
 public class CambiadorEscudo extends CambiadorDeEstados {
 
     // Constructor
-    public CambiadorEscudo(int x, int y) {
-        super(x, y, 64, 64, 32, 10);
+    public CambiadorEscudo(int x, int y, int alturaPanel) {
+        super(x, 64, 64, 32, 4);
+
+        // Modificar el "y" para que no se salga de la pantalla abajo
+        y = y * (alturaPanel - this.getRadio()*2) / alturaPanel;
+        this.setY(y);
 
         // Para el texto
         Paint fuenteTexto = new Paint();

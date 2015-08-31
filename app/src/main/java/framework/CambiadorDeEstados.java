@@ -17,9 +17,8 @@ public abstract class CambiadorDeEstados extends ObjetoVolador implements Clonea
 
 
     // Constructor
-    public CambiadorDeEstados(int x, int y, int ancho, int alto, int radio, int velocidad) {
+    public CambiadorDeEstados(int x, int ancho, int alto, int radio, int velocidad) {
         super.x = x;
-        super.y = y;
         super.width = ancho;
         super.height = alto;
         this.radio = radio;

@@ -25,7 +25,7 @@ public class Fabrica {
     // Métodos
     public Misil crearMisil() {
         return new Misil(BitmapFactory.decodeResource(this.panelJuego.getResources(), R.drawable.
-                missile),this.panelJuego.WIDTH, (int)(rand.nextDouble()*this.panelJuego.HEIGHT), this.panelJuego.getHelicoptero().getPuntaje());
+                missile),this.panelJuego.WIDTH, (int)(rand.nextDouble()*this.panelJuego.HEIGHT), this.panelJuego.getHelicoptero().getPuntaje(), this.panelJuego.HEIGHT);
     }
 
     public Humo crearHumo() {
@@ -34,15 +34,15 @@ public class Fabrica {
     }
 
     public CambiadorEscudo crearCambiadorEscudo() {
-        return new CambiadorEscudo(this.panelJuego.WIDTH,(int)(rand.nextDouble()*this.panelJuego.HEIGHT));
+        return new CambiadorEscudo(this.panelJuego.WIDTH,(int)(rand.nextDouble()*this.panelJuego.HEIGHT), this.panelJuego.HEIGHT);
     }
 
     public CambiadorDobleGravedad crearCambiadorDobleGravedad() {
-        return new CambiadorDobleGravedad(this.panelJuego.WIDTH,(int)(rand.nextDouble()*this.panelJuego.HEIGHT));
+        return new CambiadorDobleGravedad(this.panelJuego.WIDTH,(int)(rand.nextDouble()*this.panelJuego.HEIGHT), this.panelJuego.HEIGHT);
     }
 
     public CambiadorCuadrupleGravedad crearCambiadorTripleGravedad() {
-        return new CambiadorCuadrupleGravedad(this.panelJuego.WIDTH,(int)(rand.nextDouble()*this.panelJuego.HEIGHT));
+        return new CambiadorCuadrupleGravedad(this.panelJuego.WIDTH,(int)(rand.nextDouble()*this.panelJuego.HEIGHT), this.panelJuego.HEIGHT);
     }
 
 }

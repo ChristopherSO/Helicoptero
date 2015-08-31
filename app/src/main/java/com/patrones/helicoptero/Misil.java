@@ -9,7 +9,7 @@ import framework.ObjetoDisparable;
 public class Misil extends ObjetoDisparable {
 
     // Constructor
-    public Misil(Bitmap imagen, int x, int y, int puntaje) {
+    public Misil(Bitmap imagen, int x, int y, int puntaje, int alturaPanel) {
         super(
                 imagen,
                 x,
@@ -19,7 +19,11 @@ public class Misil extends ObjetoDisparable {
                 puntaje,
                 13
         );
-        this.getAnimacion().setDelay(100-this.getVelocidad());
+        this.getAnimacion().setDelay(100 - this.getVelocidad());
+
+        // Modificar el "y" para que se ajuste a sus márgenes
+        y = (y * (alturaPanel - this.getHeight()*3) / alturaPanel) + this.getHeight();
+        this.setY(y);
     }
 
 
