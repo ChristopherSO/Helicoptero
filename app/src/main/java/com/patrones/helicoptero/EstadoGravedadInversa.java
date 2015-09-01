@@ -9,24 +9,24 @@ import framework.CambiadorDeEstados;
 /**
  * Created by suarezch on 24/08/2015.
  */
-public class EstadoCuadrupleGravedad implements IEstadoHelicoptero {
+public class EstadoGravedadInversa implements IEstadoHelicoptero {
 
     // Atributos
     private Helicoptero helicoptero;
 
 
     // Constructor
-    public EstadoCuadrupleGravedad(Helicoptero helicoptero) {
+    public EstadoGravedadInversa(Helicoptero helicoptero) {
         this.helicoptero = helicoptero;
     }
 
 
-    // Métodos implementados
+    // Mï¿½todos implementados
     public void draw(Canvas canvas) {
 
         // Dibujar el escudo
         Paint estiloCirculo = new Paint();
-        estiloCirculo.setColor(Color.argb(24, 64, 0, 0));
+        estiloCirculo.setColor(Color.argb(24, 128, 0, 64));
         estiloCirculo.setStyle(Paint.Style.FILL_AND_STROKE);
         canvas.drawCircle(
                 helicoptero.getX() + 34,
@@ -35,7 +35,7 @@ public class EstadoCuadrupleGravedad implements IEstadoHelicoptero {
                 estiloCirculo
         );
 
-        // Dibujar el helicóptero normalcanvas.drawBitmap(
+        // Dibujar el helicï¿½ptero normalcanvas.drawBitmap(
         canvas.drawBitmap(
                 helicoptero.getAnimacion().getImage(),
                 helicoptero.getX(),

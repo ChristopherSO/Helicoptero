@@ -193,30 +193,13 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
                 }
             }
 
-            // Añadir CambiadorCuadrupleGravedad a la lista
-            //if (!(helicoptero.getEstado() instanceof EstadoCuadrupleGravedad)) { // No crear CambiadorCuadrupleGravedad si ya tiene ese estado
-                if (helicoptero.getPuntaje() % 350 == 0) {
-                    if (cambiadores.size()==0) { // Este if asegura que solo se cree una instancia durante el tiempo en que el puntaje coincide con el resto del módulo
-                        System.out.println("Creando CambiadorCuadrupleGravedad");
-                        cambiadores.add(fabrica.crearCambiadorTripleGravedad());
-                    }
-                }
-            //}
-            // Añadir CambiadorEscudo a la lista
-            if (!(helicoptero.getEstado() instanceof EstadoConEscudo)) { // No crear CambiadorEscudo si ya tiene el escudo puesto
-                if (helicoptero.getPuntaje() % 150 == 0) {
-                    if (cambiadores.size()==0) { // Este if asegura que solo se cree una instancia durante el tiempo en que el puntaje coincide con el resto del módulo
-                        System.out.println("Creando CambiadorEscudo");
-                        cambiadores.add(fabrica.crearCambiadorEscudo());
-                    }
-                }
-            }
-            // Añadir CambiadorDobleGravedad a la lista
-            if (!(helicoptero.getEstado() instanceof EstadoDobleGravedad)) { // No crear CambiadorDobleGravedad si ya tiene ese estado
-                if (helicoptero.getPuntaje() % 250 == 0) {
-                    if (cambiadores.size()==0) { // Este if asegura que solo se cree una instancia durante el tiempo en que el puntaje coincide con el resto del módulo
-                        System.out.println("Creando CambiadorDobleGravedad");
-                        cambiadores.add(fabrica.crearCambiadorDobleGravedad());
+            // Añadir Cambiador a la lista
+            if (helicoptero.getPuntaje() % 100 == 0) {
+                if (cambiadores.size() == 0) { // Este if asegura que solo se cree una instancia durante el tiempo en que el puntaje coincide con el resto del módulo
+                    System.out.println("Creando CambiadorCuadrupleGravedad");
+                    CambiadorDeEstados cambiador = fabrica.crearCambiador();
+                    if (!(this.helicoptero.getEstado() instanceof EstadoConEscudo && cambiador instanceof CambiadorEscudo)) {
+                        cambiadores.add(cambiador);
                     }
                 }
             }
@@ -225,12 +208,21 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
                 // Update cambiador
                 if (cambiadores.get(i) instanceof CambiadorEscudo) {
                     ((CambiadorEscudo)cambiadores.get(i)).update();
-                } else
-                if (cambiadores.get(i) instanceof CambiadorDobleGravedad) {
+                }
+                else if (cambiadores.get(i) instanceof CambiadorDobleGravedad) {
                     ((CambiadorDobleGravedad)cambiadores.get(i)).update();
-                } else
-                if (cambiadores.get(i) instanceof CambiadorCuadrupleGravedad) {
+                }
+                else if (cambiadores.get(i) instanceof CambiadorTripleGravedad) {
+                    ((CambiadorTripleGravedad)cambiadores.get(i)).update();
+                }
+                else if (cambiadores.get(i) instanceof CambiadorCuadrupleGravedad) {
                     ((CambiadorCuadrupleGravedad)cambiadores.get(i)).update();
+                }
+                else if (cambiadores.get(i) instanceof CambiadorGravedadInversa) {
+                    ((CambiadorGravedadInversa)cambiadores.get(i)).update();
+                }
+                else if (cambiadores.get(i) instanceof CambiadorGravedadNormal) {
+                    ((CambiadorGravedadNormal)cambiadores.get(i)).update();
                 }
 
                 // Comprobar colisión para remover el cambiador
@@ -238,12 +230,21 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
 
                     if (cambiadores.get(i) instanceof CambiadorEscudo) {
                         ((CambiadorEscudo)cambiadores.get(i)).cambiarEstado(helicoptero);
-                    } else
-                    if (cambiadores.get(i) instanceof CambiadorDobleGravedad) {
+                    }
+                    else if (cambiadores.get(i) instanceof CambiadorDobleGravedad) {
                         ((CambiadorDobleGravedad)cambiadores.get(i)).cambiarEstado(helicoptero);
-                    } else
-                    if (cambiadores.get(i) instanceof CambiadorCuadrupleGravedad) {
+                    }
+                    else if (cambiadores.get(i) instanceof CambiadorCuadrupleGravedad) {
                         ((CambiadorCuadrupleGravedad)cambiadores.get(i)).cambiarEstado(helicoptero);
+                    }
+                    else if (cambiadores.get(i) instanceof CambiadorTripleGravedad) {
+                        ((CambiadorTripleGravedad)cambiadores.get(i)).cambiarEstado(helicoptero);
+                    }
+                    else if (cambiadores.get(i) instanceof CambiadorGravedadInversa) {
+                        ((CambiadorGravedadInversa)cambiadores.get(i)).cambiarEstado(helicoptero);
+                    }
+                    else if (cambiadores.get(i) instanceof CambiadorGravedadNormal) {
+                        ((CambiadorGravedadNormal)cambiadores.get(i)).cambiarEstado(helicoptero);
                     }
 
                     cambiadores.remove(i);
