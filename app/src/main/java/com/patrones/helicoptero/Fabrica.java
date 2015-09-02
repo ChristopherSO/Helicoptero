@@ -2,6 +2,8 @@ package com.patrones.helicoptero;
 
 import android.graphics.BitmapFactory;
 import com.patrones.laserlightgame.R;
+
+import java.util.ArrayList;
 import java.util.Random;
 
 import framework.CambiadorDeEstados;
@@ -13,16 +15,20 @@ import framework.ObjetoDisparable;
  */
 public class Fabrica {
 
-    // Atributos
+    // Atributos y relaciones
     private Random rand;
-    // Relaciones
     private PanelJuego panelJuego;
+    private ArrayList<Comando> listaComandos;
 
 
     // Constructor
     public Fabrica(PanelJuego panelJuego) {
         this.rand = new Random();
         this.panelJuego = panelJuego;
+        this.listaComandos = new ArrayList<Comando>();
+        listaComandos.add(new CrearCambiadorEscudo(panelJuego));
+        listaComandos.add(new CrearCambiadorEscudo(panelJuego));
+        listaComandos.add(new CrearCambiadorEscudo(panelJuego));
     }
 
     // Métodos
@@ -48,23 +54,47 @@ public class Fabrica {
                 this.panelJuego.getHelicoptero().getY());
     }
 
-    private CambiadorEscudo crearCambiadorEscudo() {
-        return new CambiadorEscudo(this.panelJuego.WIDTH,(int)(rand.nextDouble()*this.panelJuego.HEIGHT), this.panelJuego.HEIGHT);
+    private abstract class Comando {
+        private PanelJuego panelJuego;
+        Comando(PanelJuego panelJuego){this.panelJuego = panelJuego;}
+        abstract CambiadorDeEstados ejecutar();
+        PanelJuego getPanelJuego() {return this.panelJuego;}
     }
-    private CambiadorDobleGravedad crearCambiadorDobleGravedad() {
-        return new CambiadorDobleGravedad(this.panelJuego.WIDTH,(int)(rand.nextDouble()*this.panelJuego.HEIGHT), this.panelJuego.HEIGHT);
+    private class CrearCambiadorEscudo extends Comando {
+        CrearCambiadorEscudo(PanelJuego panelJuego){super(panelJuego);}
+        public CambiadorEscudo ejecutar() {
+            return new CambiadorEscudo(this.getPanelJuego().WIDTH,(int)(rand.nextDouble()*this.getPanelJuego().HEIGHT), this.getPanelJuego().HEIGHT);
+        }
     }
-    private CambiadorTripleGravedad crearCambiadorTripleGravedad() {
-        return new CambiadorTripleGravedad(this.panelJuego.WIDTH,(int)(rand.nextDouble()*this.panelJuego.HEIGHT), this.panelJuego.HEIGHT);
+    private class CrearCambiadorDobleGravedad extends Comando {
+        CrearCambiadorDobleGravedad(PanelJuego panelJuego){super(panelJuego);}
+        public CambiadorDobleGravedad ejecutar() {
+            return new CambiadorDobleGravedad(this.getPanelJuego().WIDTH,(int)(rand.nextDouble()*this.getPanelJuego().HEIGHT), this.getPanelJuego().HEIGHT);
+        }
     }
-    private CambiadorCuadrupleGravedad crearCambiadorCuadrupleGravedad() {
-        return new CambiadorCuadrupleGravedad(this.panelJuego.WIDTH,(int)(rand.nextDouble()*this.panelJuego.HEIGHT), this.panelJuego.HEIGHT);
+    private class CrearCambiadorGravedadNormal extends Comando {
+        CrearCambiadorGravedadNormal(PanelJuego panelJuego){super(panelJuego);}
+        public CambiadorGravedadNormal ejecutar() {
+            return new CambiadorGravedadNormal(this.getPanelJuego().WIDTH,(int)(rand.nextDouble()*this.getPanelJuego().HEIGHT), this.getPanelJuego().HEIGHT);
+        }
     }
-    private CambiadorGravedadInversa crearCambiadorGravedadInversa() {
-        return new CambiadorGravedadInversa(this.panelJuego.WIDTH,(int)(rand.nextDouble()*this.panelJuego.HEIGHT), this.panelJuego.HEIGHT);
+    private class CrearCambiadorGravedadInversa extends Comando {
+        CrearCambiadorGravedadInversa(PanelJuego panelJuego){super(panelJuego);}
+        public CambiadorGravedadInversa ejecutar() {
+            return new CambiadorGravedadInversa(this.getPanelJuego().WIDTH,(int)(rand.nextDouble()*this.getPanelJuego().HEIGHT), this.getPanelJuego().HEIGHT);
+        }
     }
-    private CambiadorGravedadNormal crearCambiadorGravedadNormal() {
-        return new CambiadorGravedadNormal(this.panelJuego.WIDTH,(int)(rand.nextDouble()*this.panelJuego.HEIGHT), this.panelJuego.HEIGHT);
+    private class CrearCambiadorTripleGravedad extends Comando {
+        CrearCambiadorTripleGravedad(PanelJuego panelJuego){super(panelJuego);}
+        public CambiadorTripleGravedad ejecutar() {
+            return new CambiadorTripleGravedad(this.getPanelJuego().WIDTH,(int)(rand.nextDouble()*this.getPanelJuego().HEIGHT), this.getPanelJuego().HEIGHT);
+        }
+    }
+    private class CrearCambiadorCuadrupleGravedad extends Comando {
+        CrearCambiadorCuadrupleGravedad(PanelJuego panelJuego){super(panelJuego);}
+        public CambiadorCuadrupleGravedad ejecutar() {
+            return new CambiadorCuadrupleGravedad(this.getPanelJuego().WIDTH,(int)(rand.nextDouble()*this.getPanelJuego().HEIGHT), this.getPanelJuego().HEIGHT);
+        }
     }
 
     public CambiadorDeEstados crearCambiador() {
@@ -72,140 +102,79 @@ public class Fabrica {
         int puntaje = this.panelJuego.getHelicoptero().getPuntaje();
         IEstadoHelicoptero estadoHelicoptero = this.panelJuego.getHelicoptero().getEstado();
 
-        if (puntaje >= 2000) {
-            numAleatorio = rand.nextInt(13) + 1 ; // Resultados entre 1 y 12
-            System.out.println("** puntaje = " + puntaje + ", numAleatorio entre 1 y 12 = " + numAleatorio);
-            while (numAleatorio > 0) {
-                switch (numAleatorio) {
-                    case 12:
-                        if (!(estadoHelicoptero instanceof EstadoCuadrupleGravedad)) {
-                            return crearCambiadorCuadrupleGravedad();
-                        }
-                    case 11:
-                    case 10:
-                        if (!(estadoHelicoptero instanceof EstadoTripleGravedad)) {
-                            return crearCambiadorTripleGravedad();
-                        }
-                    case 9:
-                    case 8:
-                        if (!(estadoHelicoptero instanceof EstadoDobleGravedad)) {
-                            return crearCambiadorDobleGravedad();
-                        }
-                    case 7:
-                    case 6:
-                        if (!(estadoHelicoptero instanceof EstadoGravedadInversa)) {
-                            return crearCambiadorGravedadInversa();
-                        }
-                    case 5:
-                    case 4:
-                        if (!(estadoHelicoptero instanceof EstadoNormal || estadoHelicoptero instanceof EstadoConEscudo)) {
-                            return  crearCambiadorGravedadNormal();
-                        }
-                    default:
-                        if (!(estadoHelicoptero instanceof EstadoConEscudo)) {
-                            return crearCambiadorEscudo();
-                        }
-                        System.out.println("** Cayó CambiadorEscudo cuando ya tenía escudo puesto");
-                        numAleatorio = rand.nextInt(13) + 6 ; // Resultados entre 6 y 12
-                        /***
-                         * si llega a este punto es porque tenía el escudo puesto, por eso se
-                         * reinicia el proceso con el while pero esta vez quitando las opciones de
-                         * escudo y gravedad normal.
-                         ***/
-                } // cierre del switch
-            } // cierre del while
-        } // cierre del if (puntaje > 2000)
-        else if (puntaje >= 1500) {
-            numAleatorio = rand.nextInt(11) + 1 ; // Resultados entre 1 y 10
-            System.out.println("** puntaje = " + puntaje + ", numAleatorio entre 1 y 10 = " + numAleatorio);
-            while (numAleatorio > 0) {
-                switch (numAleatorio) {
-                case 10:
-                    if (!(estadoHelicoptero instanceof EstadoTripleGravedad)) {
-                        return crearCambiadorTripleGravedad();
-                    }
-                case 9:
-                case 8:
-                    if (!(estadoHelicoptero instanceof EstadoDobleGravedad)) {
-                        return crearCambiadorDobleGravedad();
-                    }
-                case 7:
-                case 6:
-                    if (!(estadoHelicoptero instanceof EstadoGravedadInversa)) {
-                        return crearCambiadorGravedadInversa();
-                    }
-                case 5:
-                case 4:
-                    if (!(estadoHelicoptero instanceof EstadoNormal || estadoHelicoptero instanceof EstadoConEscudo)) {
-                        return  crearCambiadorGravedadNormal();
-                    }
-                default:
-                    if (!(estadoHelicoptero instanceof EstadoConEscudo)) {
-                        return crearCambiadorEscudo();
-                    }
-                    System.out.println("** Cayó CambiadorEscudo cuando ya tenía escudo puesto");
-                    numAleatorio = rand.nextInt(11) + 6 ; // Resultados entre 6 y 10
-                    /***
-                     * si llega a este punto es porque tenía el escudo puesto, por eso se
-                     * reinicia el proceso con el while pero esta vez quitando las opciones de
-                     * escudo y gravedad normal.
-                     ***/
-                } // cierre del switch
+        // Agregar comandos según el puntaje al que vaya llegando
+        switch (puntaje) {
+            case 500:
+                    listaComandos.add(new CrearCambiadorDobleGravedad(this.panelJuego));
+                    listaComandos.add(new CrearCambiadorGravedadNormal(this.panelJuego));
+                    listaComandos.add(new CrearCambiadorGravedadNormal(this.panelJuego));
+                    listaComandos.add(new CrearCambiadorEscudo(panelJuego));
+                break;
+            case 1000:
+                    listaComandos.add(new CrearCambiadorDobleGravedad(this.panelJuego));
+                    listaComandos.add(new CrearCambiadorGravedadInversa(this.panelJuego));
+                    listaComandos.add(new CrearCambiadorEscudo(panelJuego));
+                break;
+            case 1500:
+                    listaComandos.add(new CrearCambiadorGravedadInversa(this.panelJuego));
+                    listaComandos.add(new CrearCambiadorTripleGravedad(this.panelJuego));
+                    listaComandos.add(new CrearCambiadorEscudo(panelJuego));
+                break;
+            case 2000:
+                    listaComandos.add(new CrearCambiadorTripleGravedad(this.panelJuego));
+                    listaComandos.add(new CrearCambiadorCuadrupleGravedad(this.panelJuego));
+                break;
+        }
+        System.out.println("** listaComandos.size = " + listaComandos.size());
+
+        // Remover los comandos que no apliquen para el estado en el que se encuentra
+        ArrayList<Comando> listaComandosFiltrados = new ArrayList<Comando>(listaComandos);
+        if (estadoHelicoptero instanceof EstadoNormal) {
+            for (int i=0; i<listaComandosFiltrados.size(); i++) {
+                if (listaComandosFiltrados.get(i) instanceof CrearCambiadorGravedadNormal) {
+                    listaComandosFiltrados.remove(i);
+                }
             }
         }
-        else if (puntaje >= 1000) {
-            numAleatorio = rand.nextInt(9) + 1; // Resultados entre 1 y 8
-            System.out.println("** puntaje = " + puntaje + ", numAleatorio entre 1 y 8 = " + numAleatorio);
-            while (numAleatorio > 0) {
-                switch (numAleatorio) {
-                    case 8:
-                        return crearCambiadorGravedadInversa();
-                    case 7:
-                    case 6:
-                        if (!(estadoHelicoptero instanceof EstadoDobleGravedad)) {
-                            return crearCambiadorDobleGravedad();
-                        }
-                    case 5:
-                    case 4:
-                        if (!(estadoHelicoptero instanceof EstadoNormal || estadoHelicoptero instanceof EstadoConEscudo)) {
-                            return  crearCambiadorGravedadNormal();
-                        }
-                    default:
-                        if (!(estadoHelicoptero instanceof EstadoConEscudo)) {
-                            return crearCambiadorEscudo();
-                        }
-                        System.out.println("** Cayó CambiadorEscudo cuando ya tenía escudo puesto");
-                        numAleatorio = rand.nextInt(9) + 6 ; // Resultados entre 6 y 8
-                        /***
-                         * si llega a este punto es porque tenía el escudo puesto, por eso se
-                         * reinicia el proceso con el while pero esta vez quitando las opciones de
-                         * escudo y gravedad normal.
-                         ***/
-                } // cierre del switch
+        else if (estadoHelicoptero instanceof EstadoConEscudo) {
+            for (int i=0; i<listaComandosFiltrados.size(); i++) {
+                if (listaComandosFiltrados.get(i) instanceof CrearCambiadorGravedadNormal
+                        || listaComandosFiltrados.get(i) instanceof CrearCambiadorEscudo) {
+                    listaComandosFiltrados.remove(i);
+                }
             }
         }
-        else if (puntaje >= 500) {
-            numAleatorio = rand.nextInt(7) + 1; // Resultados entre 1 y 6
-            System.out.println("** puntaje = " + puntaje + ", numAleatorio entre 1 y 6 = " + numAleatorio);
-                switch (numAleatorio) {
-                    case 6:
-                        if (!(estadoHelicoptero instanceof EstadoDobleGravedad)) {
-                            return crearCambiadorDobleGravedad();
-                        }
-                    case 5:
-                    case 4:
-                        if (!(estadoHelicoptero instanceof EstadoNormal || estadoHelicoptero instanceof EstadoConEscudo)) {
-                            return  crearCambiadorGravedadNormal();
-                        }
-                    default:
-                        if (!(estadoHelicoptero instanceof EstadoConEscudo)) {
-                            return crearCambiadorEscudo();
-                        }
-                        System.out.println("** Cayó CambiadorEscudo cuando ya tenía escudo puesto");
-                        return crearCambiadorDobleGravedad();
-                } // cierre del switch
+        else if (estadoHelicoptero instanceof EstadoDobleGravedad) {
+            for (int i=0; i<listaComandosFiltrados.size(); i++) {
+                if (listaComandosFiltrados.get(i) instanceof CrearCambiadorDobleGravedad) {
+                    listaComandosFiltrados.remove(i);
+                }
+            }
         }
-        return crearCambiadorEscudo();
+        else if (estadoHelicoptero instanceof EstadoGravedadInversa) {
+            for (int i=0; i<listaComandosFiltrados.size(); i++) {
+                if (listaComandosFiltrados.get(i) instanceof CrearCambiadorGravedadInversa) {
+                    listaComandosFiltrados.remove(i);
+                }
+            }
+        }
+        else if (estadoHelicoptero instanceof EstadoTripleGravedad) {
+            for (int i=0; i<listaComandosFiltrados.size(); i++) {
+                if (listaComandosFiltrados.get(i) instanceof CrearCambiadorTripleGravedad) {
+                    listaComandosFiltrados.remove(i);
+                }
+            }
+        }
+        else if (estadoHelicoptero instanceof EstadoCuadrupleGravedad) {
+            for (int i=0; i<listaComandosFiltrados.size(); i++) {
+                if (listaComandosFiltrados.get(i) instanceof CrearCambiadorCuadrupleGravedad) {
+                    listaComandosFiltrados.remove(i);
+                }
+            }
+        }
+
+        numAleatorio = rand.nextInt(listaComandosFiltrados.size());
+        return listaComandosFiltrados.get(numAleatorio).ejecutar();
     }
 
     public ObjetoDisparable crearMisil() {
@@ -213,7 +182,6 @@ public class Fabrica {
         int puntaje = this.panelJuego.getHelicoptero().getPuntaje();
         IEstadoHelicoptero estadoHelicoptero = this.panelJuego.getHelicoptero().getEstado();
         numAleatorio = rand.nextInt(6) + 1 ; // Resultados entre 1 y 5
-        System.out.println("** puntaje = " + puntaje + ", numAleatorio entre 1 y 6 = " + numAleatorio);
 
         if (puntaje >= 2500) {
             return crearMisilPerseguidor();

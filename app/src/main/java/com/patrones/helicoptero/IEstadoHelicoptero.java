@@ -9,7 +9,7 @@ import framework.CambiadorDeEstados;
  */
 public interface IEstadoHelicoptero {
 
-    public void draw(Canvas canvas);
+    void draw(Canvas canvas);
 
-    public void colisionar();
+    void colisionar();
 }

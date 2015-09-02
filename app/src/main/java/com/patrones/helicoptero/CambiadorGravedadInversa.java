@@ -29,7 +29,7 @@ public class CambiadorGravedadInversa extends CambiadorDeEstados {
 
         // Para el círculo
         Paint estiloCirculo = new Paint();
-        estiloCirculo.setColor(Color.argb(255,128,0,64));
+        estiloCirculo.setColor(Color.argb(255,128,0,128));
         estiloCirculo.setStyle(Paint.Style.FILL_AND_STROKE);
         this.setEstiloCirculo(estiloCirculo);
     }

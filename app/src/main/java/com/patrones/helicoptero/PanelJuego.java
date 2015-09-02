@@ -195,7 +195,7 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
             }
 
             // Añadir Cambiador a la lista
-            if (helicoptero.getPuntaje() % 50 == 0) {
+            if (helicoptero.getPuntaje() % 100 == 0) {
                 if (cambiadores.size() == 0) { // Este if asegura que solo se cree una instancia durante el tiempo en que el puntaje coincide con el resto del módulo
                     System.out.println("Creando CambiadorCuadrupleGravedad");
                     CambiadorDeEstados cambiador = fabrica.crearCambiador();
