@@ -37,7 +37,6 @@ public abstract class ObjetoDisparable extends ObjetoVolador implements Cloneabl
     // Métodos
     public void update()
     {
-        System.out.println("** velocidad = " + velocidad);
         x -= velocidad;
         animacion.update();
     }

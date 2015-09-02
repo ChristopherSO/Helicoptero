@@ -1,6 +1,7 @@
 package framework;
 
 import android.graphics.Bitmap;
+import android.graphics.Matrix;
 
 
 /**
@@ -17,6 +18,7 @@ public abstract class JugadorAeronave extends ObjetoVolador {
     private int cantFotogramas;
     private int retrasoAnimacion;
     private int dyFactor;
+    private boolean estaVolteado = false;
     private Animacion animacion;
 
 
@@ -69,6 +71,9 @@ public abstract class JugadorAeronave extends ObjetoVolador {
         puntaje = 0;
     }
 
+    public Bitmap getGrafico() {
+        return this.grafico;
+    }
     public void setGrafico(Bitmap grafico) {
         this.grafico = grafico;
 
@@ -91,6 +96,25 @@ public abstract class JugadorAeronave extends ObjetoVolador {
     }
     public void setDyFactor(int dyFactor) {
         this.dyFactor = dyFactor;
+
+        // voltear el helicóptero si dyFactor=-1 o enderezarlo si dyFactor>0
+        if (dyFactor==-1 && estaVolteado==false) {
+            Bitmap graficoVolteado = this.grafico;
+            Matrix matrix = new Matrix();
+            matrix.preScale(1.0f, -1.0f);
+            graficoVolteado = Bitmap.createBitmap(graficoVolteado, 0, 0, graficoVolteado.getWidth(), graficoVolteado.getHeight(), matrix, true);
+            setGrafico(graficoVolteado);
+            this.estaVolteado = true;
+        }
+        // Enderezar el helicóptero si dyFactor>0
+        if (dyFactor>0 && estaVolteado==true) {
+            Bitmap graficoVolteado = this.grafico;
+            Matrix matrix = new Matrix();
+            matrix.preScale(1.0f, -1.0f);
+            graficoVolteado = Bitmap.createBitmap(graficoVolteado, 0, 0, graficoVolteado.getWidth(), graficoVolteado.getHeight(), matrix, true);
+            setGrafico(graficoVolteado);
+            this.estaVolteado = false;
+        }
     }
     public Animacion getAnimacion () {
         return this.animacion;
