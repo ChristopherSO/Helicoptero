@@ -43,7 +43,7 @@ public abstract class ObjetoVolador {
     }
     public Rect getRectangle()
     {
-        return new Rect(x, y, x+width, y+height);
+        return new Rect(getX(), getY(), getX()+getWidth(), getY()+getHeight());
     }
 
 }

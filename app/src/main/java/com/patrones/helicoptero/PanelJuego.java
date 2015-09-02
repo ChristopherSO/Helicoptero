@@ -18,6 +18,7 @@ import java.util.ArrayList;
 
 import framework.CambiadorDeEstados;
 import framework.Fondo;
+import framework.ObjetoDisparable;
 import framework.ObjetoVolador;
 
 
@@ -30,7 +31,7 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
     private MainThread thread;
     private Fondo bg;
     private Helicoptero helicoptero;
-    private ArrayList<Misil> misiles;
+    private ArrayList<ObjetoDisparable> misiles;
     private ArrayList<Humo> humo;
     private long smokeStartTime;
     private ArrayList<CambiadorDeEstados> cambiadores;
@@ -51,7 +52,7 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
     public PanelJuego(Context context)
     {
         super(context);
-        this.misiles = new ArrayList<Misil>();
+        this.misiles = new ArrayList<ObjetoDisparable>();
         this.humo = new ArrayList<Humo>();
         this.cambiadores = new ArrayList<CambiadorDeEstados>();
 
@@ -326,7 +327,7 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
             }
 
             //draw misiles
-            for(Misil m: misiles) {
+            for(ObjetoDisparable m: misiles) {
                 m.draw(canvas);
             }
 

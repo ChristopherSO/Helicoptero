@@ -21,7 +21,7 @@ public abstract class JugadorAeronave extends ObjetoVolador {
 
 
     // Constructor
-    public JugadorAeronave(int x, int y, int ancho, int alto, int cantFotogramas, int retrasoAnimacion, int dyFactor) {
+    public JugadorAeronave(int x, int y, int ancho, int alto, int cantFotogramas, int retrasoAnimacion, int factorDy) {
 
         super.x = x;
         super.y = y;
@@ -33,7 +33,7 @@ public abstract class JugadorAeronave extends ObjetoVolador {
         this.tiempoInicio = System.nanoTime();
         this.cantFotogramas = cantFotogramas;
         this.retrasoAnimacion = retrasoAnimacion;
-        this.dyFactor = dyFactor;
+        this.dyFactor = factorDy;
     }
 
 

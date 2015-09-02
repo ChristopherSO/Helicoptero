@@ -5,6 +5,7 @@ import com.patrones.laserlightgame.R;
 import java.util.Random;
 
 import framework.CambiadorDeEstados;
+import framework.ObjetoDisparable;
 
 
 /**
@@ -25,9 +26,21 @@ public class Fabrica {
     }
 
     // Métodos
-    public Misil crearMisil() {
+    public Misil crearMisilNormal() {
         return new Misil(BitmapFactory.decodeResource(this.panelJuego.getResources(), R.drawable.
-                missile),this.panelJuego.WIDTH, (int)(rand.nextDouble()*this.panelJuego.HEIGHT), this.panelJuego.getHelicoptero().getPuntaje(), this.panelJuego.HEIGHT);
+                misil),this.panelJuego.WIDTH, (int)(rand.nextDouble()*this.panelJuego.HEIGHT), this.panelJuego.getHelicoptero().getPuntaje(), this.panelJuego.HEIGHT);
+    }
+    public MisilPerseguidor crearMisilPerseguidor() {
+        return new MisilPerseguidor(
+                BitmapFactory.decodeResource(this.panelJuego.getResources(), R.drawable.
+                misil_perseguidor),
+                this.panelJuego.WIDTH,
+                (int)(rand.nextDouble()*this.panelJuego.HEIGHT),
+                this.panelJuego.getHelicoptero().getPuntaje(),
+                this.panelJuego.HEIGHT,
+                this.panelJuego.getHelicoptero(),
+                rand.nextInt(4) + 1 // número aleatorio entre 1 y 3
+        );
     }
 
     public Humo crearHumo() {
@@ -193,6 +206,57 @@ public class Fabrica {
                 } // cierre del switch
         }
         return crearCambiadorEscudo();
+    }
+
+    public ObjetoDisparable crearMisil() {
+        int numAleatorio;
+        int puntaje = this.panelJuego.getHelicoptero().getPuntaje();
+        IEstadoHelicoptero estadoHelicoptero = this.panelJuego.getHelicoptero().getEstado();
+        numAleatorio = rand.nextInt(6) + 1 ; // Resultados entre 1 y 5
+        System.out.println("** puntaje = " + puntaje + ", numAleatorio entre 1 y 6 = " + numAleatorio);
+
+        if (puntaje >= 2500) {
+            return crearMisilPerseguidor();
+        }
+        else if (puntaje >= 2000) {
+            switch (numAleatorio) {
+                case 5:
+                case 4:
+                case 3:
+                case 2:
+                    return crearMisilPerseguidor();
+                default:
+                    return crearMisilNormal();
+            }
+        }
+        else if (puntaje >= 1500) {
+            switch (numAleatorio) {
+                case 5:
+                case 4:
+                case 3:
+                    return crearMisilPerseguidor();
+                default:
+                    return crearMisilNormal();
+            }
+        }
+        else if (puntaje >= 1000) {
+            switch (numAleatorio) {
+                case 5:
+                case 4:
+                    return crearMisilPerseguidor();
+                default:
+                    return crearMisilNormal();
+            }
+        }
+        else if (puntaje >= 500) {
+            switch (numAleatorio) {
+                case 5:
+                    return crearMisilPerseguidor();
+                default:
+                    return crearMisilNormal();
+            }
+        }
+        return crearMisilNormal();
     }
 
 }
