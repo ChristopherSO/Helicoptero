@@ -105,39 +105,46 @@ public class Fabrica {
         // Agregar comandos según el puntaje al que vaya llegando
         switch (puntaje) {
             case 500:
+                if (listaComandos.size() == 3) { // Esta comprobación es necesaria ya que este método se puede ejecutar varias veces cuando se está en este puntaje, ya que hay varios frames por puntaje.
                     listaComandos.add(new CrearCambiadorDobleGravedad(this.panelJuego));
                     listaComandos.add(new CrearCambiadorGravedadNormal(this.panelJuego));
                     listaComandos.add(new CrearCambiadorGravedadNormal(this.panelJuego));
                     listaComandos.add(new CrearCambiadorEscudo(panelJuego));
+                }
                 break;
             case 1000:
+                if (listaComandos.size() == 7) {
                     listaComandos.add(new CrearCambiadorDobleGravedad(this.panelJuego));
                     listaComandos.add(new CrearCambiadorGravedadInversa(this.panelJuego));
                     listaComandos.add(new CrearCambiadorEscudo(panelJuego));
+                }
                 break;
             case 1500:
+                if (listaComandos.size() == 10) {
                     listaComandos.add(new CrearCambiadorGravedadInversa(this.panelJuego));
                     listaComandos.add(new CrearCambiadorTripleGravedad(this.panelJuego));
                     listaComandos.add(new CrearCambiadorEscudo(panelJuego));
+                }
                 break;
             case 2000:
+                if (listaComandos.size() == 13) {
                     listaComandos.add(new CrearCambiadorTripleGravedad(this.panelJuego));
                     listaComandos.add(new CrearCambiadorCuadrupleGravedad(this.panelJuego));
+                }
                 break;
         }
-        System.out.println("** listaComandos.size = " + listaComandos.size());
 
         // Remover los comandos que no apliquen para el estado en el que se encuentra
         ArrayList<Comando> listaComandosFiltrados = new ArrayList<Comando>(listaComandos);
         if (estadoHelicoptero instanceof EstadoNormal) {
-            for (int i=0; i<listaComandosFiltrados.size(); i++) {
+            for (int i=listaComandosFiltrados.size()-1; i>=0; i--) {
                 if (listaComandosFiltrados.get(i) instanceof CrearCambiadorGravedadNormal) {
                     listaComandosFiltrados.remove(i);
                 }
             }
         }
         else if (estadoHelicoptero instanceof EstadoConEscudo) {
-            for (int i=0; i<listaComandosFiltrados.size(); i++) {
+            for (int i=listaComandosFiltrados.size()-1; i>=0; i--) {
                 if (listaComandosFiltrados.get(i) instanceof CrearCambiadorGravedadNormal
                         || listaComandosFiltrados.get(i) instanceof CrearCambiadorEscudo) {
                     listaComandosFiltrados.remove(i);
@@ -145,36 +152,41 @@ public class Fabrica {
             }
         }
         else if (estadoHelicoptero instanceof EstadoDobleGravedad) {
-            for (int i=0; i<listaComandosFiltrados.size(); i++) {
+            for (int i=listaComandosFiltrados.size()-1; i>=0; i--) {
                 if (listaComandosFiltrados.get(i) instanceof CrearCambiadorDobleGravedad) {
                     listaComandosFiltrados.remove(i);
                 }
             }
         }
         else if (estadoHelicoptero instanceof EstadoGravedadInversa) {
-            for (int i=0; i<listaComandosFiltrados.size(); i++) {
+            for (int i=listaComandosFiltrados.size()-1; i>=0; i--) {
                 if (listaComandosFiltrados.get(i) instanceof CrearCambiadorGravedadInversa) {
                     listaComandosFiltrados.remove(i);
                 }
             }
         }
         else if (estadoHelicoptero instanceof EstadoTripleGravedad) {
-            for (int i=0; i<listaComandosFiltrados.size(); i++) {
+            for (int i=listaComandosFiltrados.size()-1; i>=0; i--) {
                 if (listaComandosFiltrados.get(i) instanceof CrearCambiadorTripleGravedad) {
                     listaComandosFiltrados.remove(i);
                 }
             }
         }
         else if (estadoHelicoptero instanceof EstadoCuadrupleGravedad) {
-            for (int i=0; i<listaComandosFiltrados.size(); i++) {
+            for (int i=listaComandosFiltrados.size()-1; i>=0; i--) {
                 if (listaComandosFiltrados.get(i) instanceof CrearCambiadorCuadrupleGravedad) {
                     listaComandosFiltrados.remove(i);
                 }
             }
         }
 
-        numAleatorio = rand.nextInt(listaComandosFiltrados.size());
-        return listaComandosFiltrados.get(numAleatorio).ejecutar();
+        if (listaComandosFiltrados.size() > 0) {
+            numAleatorio = rand.nextInt(listaComandosFiltrados.size());
+            return listaComandosFiltrados.get(numAleatorio).ejecutar();
+        } else {
+            return (new CrearCambiadorEscudo(this.panelJuego)).ejecutar();
+        }
+
     }
 
     public ObjetoDisparable crearMisil() {
@@ -225,6 +237,13 @@ public class Fabrica {
             }
         }
         return crearMisilNormal();
+    }
+
+    public void resetListaComandos() {
+        this.listaComandos.clear();
+        listaComandos.add(new CrearCambiadorEscudo(panelJuego));
+        listaComandos.add(new CrearCambiadorEscudo(panelJuego));
+        listaComandos.add(new CrearCambiadorEscudo(panelJuego));
     }
 
 }

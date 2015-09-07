@@ -197,7 +197,6 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
             // Añadir Cambiador a la lista
             if (helicoptero.getPuntaje() % 100 == 0) {
                 if (cambiadores.size() == 0) { // Este if asegura que solo se cree una instancia durante el tiempo en que el puntaje coincide con el resto del módulo
-                    System.out.println("Creando CambiadorCuadrupleGravedad");
                     CambiadorDeEstados cambiador = fabrica.crearCambiador();
                     if (!(this.helicoptero.getEstado() instanceof EstadoConEscudo && cambiador instanceof CambiadorEscudo)) {
                         cambiadores.add(cambiador);
@@ -252,12 +251,11 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
                     break;
                 }
                 // Remueve el cambiador si se sale de la pantalla
-                if(cambiadores.get(i).getX()<-100) {
+                if(cambiadores.get(i).getX() < -cambiadores.get(i).getWidth()) {
                     cambiadores.remove(i);
                     break;
                 }
             }
-
         }
         else
         {
@@ -326,14 +324,14 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
                 sp.draw(canvas);
             }
 
-            //draw misiles
-            for(ObjetoDisparable m: misiles) {
-                m.draw(canvas);
-            }
-
             //draw cambiadores
             for(CambiadorDeEstados c: cambiadores) {
                 c.draw(canvas);
+            }
+
+            //draw misiles
+            for(ObjetoDisparable m: misiles) {
+                m.draw(canvas);
             }
 
             //draw explosion
@@ -353,6 +351,7 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
         misiles.clear();
         humo.clear();
         cambiadores.clear();
+        fabrica.resetListaComandos();
 
         //Revisa el puntaje para el jugador en panalla
         helicoptero.resetDY();

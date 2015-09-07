@@ -56,6 +56,9 @@ public abstract class ObjetoDisparable extends ObjetoVolador implements Cloneabl
         return this.animacion;
     }
 
+    public int getPuntaje() {
+        return this.puntaje;
+    }
     public void setPuntaje(int puntaje){
         this.puntaje = puntaje;
     }
@@ -73,8 +76,8 @@ public abstract class ObjetoDisparable extends ObjetoVolador implements Cloneabl
         return clon;
     }
     public void setVelocidad(){
-        this.velocidad = 7 + (int)((new Random()).nextDouble()*this.puntaje /60);
-        if(velocidad >40) velocidad = 40;
+        this.velocidad = 7 + (int)((new Random()).nextDouble()*this.puntaje /100);
+        if(velocidad >32) velocidad = 32;
     }
 
 
