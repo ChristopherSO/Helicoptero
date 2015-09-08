@@ -16,6 +16,7 @@ import android.view.SurfaceView;
 import com.patrones.laserlightgame.R;
 import java.util.ArrayList;
 
+import framework.BotonCircular;
 import framework.CambiadorDeEstados;
 import framework.Fondo;
 import framework.ObjetoDisparable;
@@ -27,9 +28,12 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
     public static final int WIDTH = 856; //Ancho del fondo del juego
     public static final int HEIGHT = 480; //Alto del fondo del juego
     public static final int MOVESPEED = -5;
+    float scaleFactorX;
+    float scaleFactorY;
     private long misilTiempoComienzo;
     private MainThread thread;
     private Fondo bg;
+    private BotonPausa botonPausa;
     private Helicoptero helicoptero;
     private ArrayList<ObjetoDisparable> misiles;
     private ArrayList<Humo> humo;
@@ -38,6 +42,8 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
     private Fabrica fabrica;
     private boolean newGameCreated;
     private Paint fuenteTexto;
+    private float touchedX;
+    private float touchedY;
 
     //Variables para cuando el jugador muere
     private ExplosionHelicoptero explosion;
@@ -94,9 +100,12 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
     public void surfaceCreated(SurfaceHolder holder){
 
         bg = new Fondo(this, BitmapFactory.decodeResource(getResources(), R.drawable.grassbg1));
+        botonPausa = new BotonPausa(this);
         helicoptero = new Helicoptero(this);
         fabrica = new Fabrica(this);
         misilTiempoComienzo = System.nanoTime();
+        this.scaleFactorX = getWidth()/(WIDTH*1.f);
+        this.scaleFactorY = getHeight()/(HEIGHT*1.f);
 
         thread = new MainThread(getHolder(),this);
 
@@ -108,7 +117,16 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
     @Override
     public boolean onTouchEvent(MotionEvent event) {
 
+        touchedX = event.getX() / scaleFactorX;
+        touchedY = event.getY() / scaleFactorY;
+
         if(event.getAction()==MotionEvent.ACTION_DOWN){
+
+            // Averiguar si presion贸 el bot贸n de pausa
+            if(botonPausa.touchDentroArea(touchedX,touchedY)) {
+                helicoptero.setJugando(false);
+                return true;
+            }
 
             if(!helicoptero.getJugando()&&newGameCreated && reset)
             {
@@ -194,9 +212,9 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
                 }
             }
 
-            // A馻dir Cambiador a la lista
+            // A帽adir Cambiador a la lista
             if (helicoptero.getPuntaje() % 100 == 0) {
-                if (cambiadores.size() == 0) { // Este if asegura que solo se cree una instancia durante el tiempo en que el puntaje coincide con el resto del m骴ulo
+                if (cambiadores.size() == 0) { // Este if asegura que solo se cree una instancia durante el tiempo en que el puntaje coincide con el resto del m贸dulo
                     CambiadorDeEstados cambiador = fabrica.crearCambiador();
                     if (!(this.helicoptero.getEstado() instanceof EstadoConEscudo && cambiador instanceof CambiadorEscudo)) {
                         cambiadores.add(cambiador);
@@ -225,7 +243,7 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
                     ((CambiadorGravedadNormal)cambiadores.get(i)).update();
                 }
 
-                // Comprobar colisi髇 para remover el cambiador
+                // Comprobar colisi贸n para remover el cambiador
                 if(colision(cambiadores.get(i), helicoptero)) {
 
                     if (cambiadores.get(i) instanceof CambiadorEscudo) {
@@ -305,9 +323,6 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
     @Override
     public void draw(Canvas canvas)
     {
-        final float scaleFactorX = getWidth()/(WIDTH*1.f);
-        final float scaleFactorY = getHeight()/(HEIGHT*1.f);
-
         if(canvas!=null) {
             final int savedState = canvas.save();
 
@@ -335,13 +350,18 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
             }
 
             //draw explosion
-            if(started)
-            {
+            if(started) {
                 explosion.draw(canvas);
             }
 
             //draw texto
             drawText(canvas);
+
+            // draw bot贸n de pausa
+            if(helicoptero.getJugando()) {
+                botonPausa.draw(canvas);
+            }
+
             canvas.restoreToCount(savedState);
         }
     }
@@ -360,7 +380,7 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
         }
 
         helicoptero.resetPuntaje();
-        helicoptero.setY(HEIGHT/2);
+        helicoptero.setY(HEIGHT / 2);
 
 
 
