@@ -52,7 +52,6 @@ public class CambiadorGravedadNormal extends CambiadorDeEstados {
     }
 
     public void cambiarEstado(Helicoptero helicoptero) {
-        helicoptero.setDyFactor(1);
         helicoptero.setGravedad(new GravedadNormal(helicoptero));
     }
 

@@ -52,7 +52,6 @@ public class CambiadorGravedadTriple extends CambiadorDeEstados {
     }
 
     public void cambiarEstado(Helicoptero helicoptero) {
-        helicoptero.setDyFactor(3);
         helicoptero.setGravedad(new GravedadTriple(helicoptero));
     }
 
