@@ -1,7 +1,8 @@
 package com.patrones.helicoptero;
 
-import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+
 import com.patrones.laserlightgame.R;
 import framework.JugadorAeronave;
 
@@ -11,8 +12,9 @@ import framework.JugadorAeronave;
 public class Helicoptero extends JugadorAeronave {
 
     // Atributos
-    private IEstadoHelicoptero estado;
     private PanelJuego panelJuego;
+    private IGravedad gravedad;
+    private Escudo escudo;
 
     // Constructor
     public Helicoptero(PanelJuego panelJuego) {
@@ -33,24 +35,51 @@ public class Helicoptero extends JugadorAeronave {
 
     // Métodos
     public void update() {
-        super.update(1, 14);
-    }
-
-
-    // Obtenedores y Modificadores
-    public IEstadoHelicoptero getEstado() {
-        return this.estado;
-    }
-
-    public void setEstado(IEstadoHelicoptero estado) {
-        this.estado = estado;
-    }
-
-    public void setEstadoInicial() {
-        if (!(estado instanceof EstadoNormal)) {
-            this.estado = new EstadoNormal(this);
-            this.setDyFactor(1);
+        super.update(1, 12);
+        if (this.escudo != null) {
+            this.escudo.update();
         }
     }
 
+    public void draw(Canvas canvas) {
+        this.gravedad.draw(canvas);
+        if (this.escudo != null) {
+            this.escudo.draw(canvas);
+        }
+    }
+
+    // Obtenedores y Modificadores
+    public IGravedad getGravedad() {
+        return this.gravedad;
+    }
+    public void setGravedad(IGravedad gravedad) {
+        this.gravedad = gravedad;
+    }
+
+    public Escudo getEscudo() {
+        return this.escudo;
+    }
+    public void setEscudo(Escudo escudo) {
+        this.escudo = escudo;
+    }
+
+    public void setEstadoInicial() {
+        if (!(gravedad instanceof GravedadNormal)) {
+            this.gravedad = new GravedadNormal(this);
+            this.escudo = null;
+        }
+    }
+
+    public PanelJuego getPanelJuego() {
+        return this.panelJuego;
+    }
+
+    public void colisionar() {
+        if (escudo != null) {
+            this.escudo.colisionar();
+        } else {
+            this.setJugando(false);
+        }
+
+    }
 }

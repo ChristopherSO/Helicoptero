@@ -35,7 +35,6 @@ public abstract class JugadorAeronave extends ObjetoVolador {
         this.tiempoInicio = System.nanoTime();
         this.cantFotogramas = cantFotogramas;
         this.retrasoAnimacion = retrasoAnimacion;
-        this.dyFactor = factorDy;
     }
 
 

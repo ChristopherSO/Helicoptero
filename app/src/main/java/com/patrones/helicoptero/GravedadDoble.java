@@ -4,20 +4,19 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 
-import framework.CambiadorDeEstados;
-
 /**
  * Created by suarezch on 24/08/2015.
  */
-public class EstadoDobleGravedad implements IEstadoHelicoptero {
+public class GravedadDoble implements IGravedad {
 
     // Atributos
     private Helicoptero helicoptero;
 
 
     // Constructor
-    public EstadoDobleGravedad(Helicoptero helicoptero) {
+    public GravedadDoble(Helicoptero helicoptero) {
         this.helicoptero = helicoptero;
+        helicoptero.setDyFactor(2);
     }
 
 
@@ -35,17 +34,13 @@ public class EstadoDobleGravedad implements IEstadoHelicoptero {
                 estiloCirculo
         );
 
-        // Dibujar el helicóptero normalcanvas.drawBitmap(
+        // Dibujar el helicóptero normal
         canvas.drawBitmap(
                 helicoptero.getAnimacion().getImage(),
                 helicoptero.getX(),
                 helicoptero.getY(),
                 null
         );
-    }
-
-    public void colisionar() {
-        helicoptero.setJugando(false);
     }
 
 }

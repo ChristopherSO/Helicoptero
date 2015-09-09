@@ -53,7 +53,7 @@ public class CambiadorGravedadInversa extends CambiadorDeEstados {
 
     public void cambiarEstado(Helicoptero helicoptero) {
         helicoptero.setDyFactor(-1);
-        helicoptero.setEstado(new EstadoGravedadInversa(helicoptero));
+        helicoptero.setGravedad(new GravedadInversa(helicoptero));
     }
 
 }

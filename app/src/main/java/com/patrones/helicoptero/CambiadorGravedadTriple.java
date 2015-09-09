@@ -10,11 +10,11 @@ import framework.CambiadorDeEstados;
 /**
  * Created by suarezch on 24/08/2015.
  */
-public class CambiadorCuadrupleGravedad extends CambiadorDeEstados {
+public class CambiadorGravedadTriple extends CambiadorDeEstados {
 
     // Constructor
-    public CambiadorCuadrupleGravedad(int x, int y, int alturaPanel) {
-        super(x, 180, 180, 90, 6);
+    public CambiadorGravedadTriple(int x, int y, int alturaPanel) {
+        super(x, 150, 150, 75, 7);
 
         // Modificar el "y" para que no se salga de la pantalla abajo
         y = y * (alturaPanel - this.getRadio()*2) / alturaPanel;
@@ -27,15 +27,15 @@ public class CambiadorCuadrupleGravedad extends CambiadorDeEstados {
         fuenteTexto.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.BOLD));
         this.setFuenteTexto(fuenteTexto);
 
-        // Para el círculo
+        // Para el cÃ­rculo
         Paint estiloCirculo = new Paint();
-        estiloCirculo.setColor(Color.argb(255,64,0,0));
+        estiloCirculo.setColor(Color.argb(255,128,0,0));
         estiloCirculo.setStyle(Paint.Style.FILL_AND_STROKE);
         this.setEstiloCirculo(estiloCirculo);
     }
 
 
-    // Métodos
+    // MÃ©todos
     public void update()
     {
         super.update(this.getVelocidad());
@@ -43,17 +43,17 @@ public class CambiadorCuadrupleGravedad extends CambiadorDeEstados {
 
     public void draw(Canvas canvas) {
 
-        // Dibujar círculo
+        // Dibujar cÃ­rculo
         canvas.drawCircle(x + this.getRadio(), y + this.getRadio(), this.getRadio(), this.getEstiloCirculo());
 
         // Dibujar texto
-        canvas.drawText("CUADRUPLE", x + 49, y + 85, this.getFuenteTexto());
-        canvas.drawText("GRAVEDAD", x + 55, y + 105, this.getFuenteTexto());
+        canvas.drawText("TRIPLE", x + 50, y + 70, this.getFuenteTexto());
+        canvas.drawText("GRAVEDAD", x + 40, y + 90, this.getFuenteTexto());
     }
 
     public void cambiarEstado(Helicoptero helicoptero) {
-        helicoptero.setDyFactor(4);
-        helicoptero.setEstado(new EstadoCuadrupleGravedad(helicoptero));
+        helicoptero.setDyFactor(3);
+        helicoptero.setGravedad(new GravedadTriple(helicoptero));
     }
 
 }

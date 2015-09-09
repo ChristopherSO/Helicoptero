@@ -62,14 +62,14 @@ public class Fabrica {
     }
     private class CrearCambiadorEscudo extends Comando {
         CrearCambiadorEscudo(PanelJuego panelJuego){super(panelJuego);}
-        public CambiadorEscudo ejecutar() {
-            return new CambiadorEscudo(this.getPanelJuego().WIDTH,(int)(rand.nextDouble()*this.getPanelJuego().HEIGHT), this.getPanelJuego().HEIGHT);
+        public CambiadorEscudoSimple ejecutar() {
+            return new CambiadorEscudoSimple(this.getPanelJuego().WIDTH,(int)(rand.nextDouble()*this.getPanelJuego().HEIGHT), this.getPanelJuego());
         }
     }
     private class CrearCambiadorDobleGravedad extends Comando {
         CrearCambiadorDobleGravedad(PanelJuego panelJuego){super(panelJuego);}
-        public CambiadorDobleGravedad ejecutar() {
-            return new CambiadorDobleGravedad(this.getPanelJuego().WIDTH,(int)(rand.nextDouble()*this.getPanelJuego().HEIGHT), this.getPanelJuego().HEIGHT);
+        public CambiadorGravedadDoble ejecutar() {
+            return new CambiadorGravedadDoble(this.getPanelJuego().WIDTH,(int)(rand.nextDouble()*this.getPanelJuego().HEIGHT), this.getPanelJuego().HEIGHT);
         }
     }
     private class CrearCambiadorGravedadNormal extends Comando {
@@ -86,21 +86,21 @@ public class Fabrica {
     }
     private class CrearCambiadorTripleGravedad extends Comando {
         CrearCambiadorTripleGravedad(PanelJuego panelJuego){super(panelJuego);}
-        public CambiadorTripleGravedad ejecutar() {
-            return new CambiadorTripleGravedad(this.getPanelJuego().WIDTH,(int)(rand.nextDouble()*this.getPanelJuego().HEIGHT), this.getPanelJuego().HEIGHT);
+        public CambiadorGravedadTriple ejecutar() {
+            return new CambiadorGravedadTriple(this.getPanelJuego().WIDTH,(int)(rand.nextDouble()*this.getPanelJuego().HEIGHT), this.getPanelJuego().HEIGHT);
         }
     }
     private class CrearCambiadorCuadrupleGravedad extends Comando {
         CrearCambiadorCuadrupleGravedad(PanelJuego panelJuego){super(panelJuego);}
-        public CambiadorCuadrupleGravedad ejecutar() {
-            return new CambiadorCuadrupleGravedad(this.getPanelJuego().WIDTH,(int)(rand.nextDouble()*this.getPanelJuego().HEIGHT), this.getPanelJuego().HEIGHT);
+        public CambiadorGravedadCuadruple ejecutar() {
+            return new CambiadorGravedadCuadruple(this.getPanelJuego().WIDTH,(int)(rand.nextDouble()*this.getPanelJuego().HEIGHT), this.getPanelJuego().HEIGHT);
         }
     }
 
     public CambiadorDeEstados crearCambiador() {
         int numAleatorio;
         int puntaje = this.panelJuego.getHelicoptero().getPuntaje();
-        IEstadoHelicoptero estadoHelicoptero = this.panelJuego.getHelicoptero().getEstado();
+        IGravedad estadoHelicoptero = this.panelJuego.getHelicoptero().getGravedad();
 
         // Agregar comandos según el puntaje al que vaya llegando
         switch (puntaje) {
@@ -136,14 +136,14 @@ public class Fabrica {
 
         // Remover los comandos que no apliquen para el estado en el que se encuentra
         ArrayList<Comando> listaComandosFiltrados = new ArrayList<Comando>(listaComandos);
-        if (estadoHelicoptero instanceof EstadoNormal) {
+        if (estadoHelicoptero instanceof GravedadNormal) {
             for (int i=listaComandosFiltrados.size()-1; i>=0; i--) {
                 if (listaComandosFiltrados.get(i) instanceof CrearCambiadorGravedadNormal) {
                     listaComandosFiltrados.remove(i);
                 }
             }
         }
-        else if (estadoHelicoptero instanceof EstadoConEscudo) {
+        else if (estadoHelicoptero instanceof EscudoSimple) {
             for (int i=listaComandosFiltrados.size()-1; i>=0; i--) {
                 if (listaComandosFiltrados.get(i) instanceof CrearCambiadorGravedadNormal
                         || listaComandosFiltrados.get(i) instanceof CrearCambiadorEscudo) {
@@ -151,28 +151,28 @@ public class Fabrica {
                 }
             }
         }
-        else if (estadoHelicoptero instanceof EstadoDobleGravedad) {
+        else if (estadoHelicoptero instanceof GravedadDoble) {
             for (int i=listaComandosFiltrados.size()-1; i>=0; i--) {
                 if (listaComandosFiltrados.get(i) instanceof CrearCambiadorDobleGravedad) {
                     listaComandosFiltrados.remove(i);
                 }
             }
         }
-        else if (estadoHelicoptero instanceof EstadoGravedadInversa) {
+        else if (estadoHelicoptero instanceof GravedadInversa) {
             for (int i=listaComandosFiltrados.size()-1; i>=0; i--) {
                 if (listaComandosFiltrados.get(i) instanceof CrearCambiadorGravedadInversa) {
                     listaComandosFiltrados.remove(i);
                 }
             }
         }
-        else if (estadoHelicoptero instanceof EstadoTripleGravedad) {
+        else if (estadoHelicoptero instanceof GravedadTriple) {
             for (int i=listaComandosFiltrados.size()-1; i>=0; i--) {
                 if (listaComandosFiltrados.get(i) instanceof CrearCambiadorTripleGravedad) {
                     listaComandosFiltrados.remove(i);
                 }
             }
         }
-        else if (estadoHelicoptero instanceof EstadoCuadrupleGravedad) {
+        else if (estadoHelicoptero instanceof GravedadCuadruple) {
             for (int i=listaComandosFiltrados.size()-1; i>=0; i--) {
                 if (listaComandosFiltrados.get(i) instanceof CrearCambiadorCuadrupleGravedad) {
                     listaComandosFiltrados.remove(i);
@@ -192,7 +192,7 @@ public class Fabrica {
     public ObjetoDisparable crearMisil() {
         int numAleatorio;
         int puntaje = this.panelJuego.getHelicoptero().getPuntaje();
-        IEstadoHelicoptero estadoHelicoptero = this.panelJuego.getHelicoptero().getEstado();
+        IGravedad estadoHelicoptero = this.panelJuego.getHelicoptero().getGravedad();
         numAleatorio = rand.nextInt(6) + 1 ; // Resultados entre 1 y 5
 
         if (puntaje >= 2500) {

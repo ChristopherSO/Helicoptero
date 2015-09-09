@@ -53,17 +53,4 @@ public abstract class CambiadorDeEstados extends ObjetoVolador implements Clonea
         return this.velocidad;
     }
 
-    public Object clone() {
-        Object clon = null;
-
-        try {
-            clon = super.clone();
-
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
-
-        return clon;
-    }
-
 }

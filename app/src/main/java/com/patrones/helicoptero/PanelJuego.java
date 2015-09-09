@@ -16,7 +16,6 @@ import android.view.SurfaceView;
 import com.patrones.laserlightgame.R;
 import java.util.ArrayList;
 
-import framework.BotonCircular;
 import framework.CambiadorDeEstados;
 import framework.Fondo;
 import framework.ObjetoDisparable;
@@ -44,6 +43,7 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
     private Paint fuenteTexto;
     private float touchedX;
     private float touchedY;
+    private CuadroPausa cuadroPausa;
 
     //Variables para cuando el jugador muere
     private ExplosionHelicoptero explosion;
@@ -101,6 +101,7 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
 
         bg = new Fondo(this, BitmapFactory.decodeResource(getResources(), R.drawable.grassbg1));
         botonPausa = new BotonPausa(this);
+        cuadroPausa = new CuadroPausa(this);
         helicoptero = new Helicoptero(this);
         fabrica = new Fabrica(this);
         misilTiempoComienzo = System.nanoTime();
@@ -182,7 +183,7 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
 
                 if(colision(misiles.get(i), helicoptero))
                 {
-                    helicoptero.getEstado().colisionar();
+                    helicoptero.colisionar();
                     misiles.remove(i);
                     break;
                 }
@@ -216,7 +217,7 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
             if (helicoptero.getPuntaje() % 100 == 0) {
                 if (cambiadores.size() == 0) { // Este if asegura que solo se cree una instancia durante el tiempo en que el puntaje coincide con el resto del módulo
                     CambiadorDeEstados cambiador = fabrica.crearCambiador();
-                    if (!(this.helicoptero.getEstado() instanceof EstadoConEscudo && cambiador instanceof CambiadorEscudo)) {
+                    if (!(this.helicoptero.getEscudo() instanceof EscudoSimple && cambiador instanceof CambiadorEscudoSimple)) {
                         cambiadores.add(cambiador);
                     }
                 }
@@ -224,17 +225,17 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
             // Para cada cambiador...
             for(int i = 0; i< cambiadores.size();i++) {
                 // Update cambiador
-                if (cambiadores.get(i) instanceof CambiadorEscudo) {
-                    ((CambiadorEscudo)cambiadores.get(i)).update();
+                if (cambiadores.get(i) instanceof CambiadorEscudoSimple) {
+                    ((CambiadorEscudoSimple)cambiadores.get(i)).update();
                 }
-                else if (cambiadores.get(i) instanceof CambiadorDobleGravedad) {
-                    ((CambiadorDobleGravedad)cambiadores.get(i)).update();
+                else if (cambiadores.get(i) instanceof CambiadorGravedadDoble) {
+                    ((CambiadorGravedadDoble)cambiadores.get(i)).update();
                 }
-                else if (cambiadores.get(i) instanceof CambiadorTripleGravedad) {
-                    ((CambiadorTripleGravedad)cambiadores.get(i)).update();
+                else if (cambiadores.get(i) instanceof CambiadorGravedadTriple) {
+                    ((CambiadorGravedadTriple)cambiadores.get(i)).update();
                 }
-                else if (cambiadores.get(i) instanceof CambiadorCuadrupleGravedad) {
-                    ((CambiadorCuadrupleGravedad)cambiadores.get(i)).update();
+                else if (cambiadores.get(i) instanceof CambiadorGravedadCuadruple) {
+                    ((CambiadorGravedadCuadruple)cambiadores.get(i)).update();
                 }
                 else if (cambiadores.get(i) instanceof CambiadorGravedadInversa) {
                     ((CambiadorGravedadInversa)cambiadores.get(i)).update();
@@ -246,17 +247,17 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
                 // Comprobar colisión para remover el cambiador
                 if(colision(cambiadores.get(i), helicoptero)) {
 
-                    if (cambiadores.get(i) instanceof CambiadorEscudo) {
-                        ((CambiadorEscudo)cambiadores.get(i)).cambiarEstado(helicoptero);
+                    if (cambiadores.get(i) instanceof CambiadorEscudoSimple) {
+                        ((CambiadorEscudoSimple)cambiadores.get(i)).cambiarEstado(helicoptero);
                     }
-                    else if (cambiadores.get(i) instanceof CambiadorDobleGravedad) {
-                        ((CambiadorDobleGravedad)cambiadores.get(i)).cambiarEstado(helicoptero);
+                    else if (cambiadores.get(i) instanceof CambiadorGravedadDoble) {
+                        ((CambiadorGravedadDoble)cambiadores.get(i)).cambiarEstado(helicoptero);
                     }
-                    else if (cambiadores.get(i) instanceof CambiadorCuadrupleGravedad) {
-                        ((CambiadorCuadrupleGravedad)cambiadores.get(i)).cambiarEstado(helicoptero);
+                    else if (cambiadores.get(i) instanceof CambiadorGravedadCuadruple) {
+                        ((CambiadorGravedadCuadruple)cambiadores.get(i)).cambiarEstado(helicoptero);
                     }
-                    else if (cambiadores.get(i) instanceof CambiadorTripleGravedad) {
-                        ((CambiadorTripleGravedad)cambiadores.get(i)).cambiarEstado(helicoptero);
+                    else if (cambiadores.get(i) instanceof CambiadorGravedadTriple) {
+                        ((CambiadorGravedadTriple)cambiadores.get(i)).cambiarEstado(helicoptero);
                     }
                     else if (cambiadores.get(i) instanceof CambiadorGravedadInversa) {
                         ((CambiadorGravedadInversa)cambiadores.get(i)).cambiarEstado(helicoptero);
@@ -330,7 +331,7 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
             bg.draw(canvas);
 
             if(!dissapear){
-                helicoptero.getEstado().draw(canvas);
+                helicoptero.draw(canvas);
             }
 
             //draw humo
@@ -352,6 +353,7 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
             //draw explosion
             if(started) {
                 explosion.draw(canvas);
+                //cuadroPausa.draw(canvas);
             }
 
             //draw texto

@@ -21,7 +21,6 @@ public class BotonCircular {
     public BotonCircular(Bitmap imagen, int radio) {
         this.imagen = imagen;
         this.radio = radio;
-        System.out.println("** Creando botón circular");
     }
 
 

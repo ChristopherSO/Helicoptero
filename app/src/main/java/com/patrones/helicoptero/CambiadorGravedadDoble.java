@@ -8,13 +8,13 @@ import android.graphics.Typeface;
 import framework.CambiadorDeEstados;
 
 /**
- * Created by suarezch on 23/08/2015.
+ * Created by suarezch on 24/08/2015.
  */
-public class CambiadorEscudo extends CambiadorDeEstados {
+public class CambiadorGravedadDoble extends CambiadorDeEstados {
 
     // Constructor
-    public CambiadorEscudo(int x, int y, int alturaPanel) {
-        super(x, 64, 64, 32, 10);
+    public CambiadorGravedadDoble(int x, int y, int alturaPanel) {
+        super(x, 120, 120, 60, 8);
 
         // Modificar el "y" para que no se salga de la pantalla abajo
         y = y * (alturaPanel - this.getRadio()*2) / alturaPanel;
@@ -22,14 +22,14 @@ public class CambiadorEscudo extends CambiadorDeEstados {
 
         // Para el texto
         Paint fuenteTexto = new Paint();
-        fuenteTexto.setColor(Color.BLUE);
-        fuenteTexto.setTextSize(12);
+        fuenteTexto.setColor(Color.WHITE);
+        fuenteTexto.setTextSize(14);
         fuenteTexto.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.BOLD));
         this.setFuenteTexto(fuenteTexto);
 
         // Para el círculo
         Paint estiloCirculo = new Paint();
-        estiloCirculo.setColor(Color.YELLOW);
+        estiloCirculo.setColor(Color.argb(255,192,0,0));
         estiloCirculo.setStyle(Paint.Style.FILL_AND_STROKE);
         this.setEstiloCirculo(estiloCirculo);
     }
@@ -47,12 +47,13 @@ public class CambiadorEscudo extends CambiadorDeEstados {
         canvas.drawCircle(x + this.getRadio(), y + this.getRadio(), this.getRadio(), this.getEstiloCirculo());
 
         // Dibujar texto
-        canvas.drawText("ESCUDO", x + 7, y + 37, this.getFuenteTexto());
+        canvas.drawText("DOBLE", x + 40, y + 55, this.getFuenteTexto());
+        canvas.drawText("GRAVEDAD", x + 25, y + 75, this.getFuenteTexto());
     }
 
     public void cambiarEstado(Helicoptero helicoptero) {
-        helicoptero.setDyFactor(1);
-        helicoptero.setEstado(new EstadoConEscudo(helicoptero));
+        helicoptero.setDyFactor(2);
+        helicoptero.setGravedad(new GravedadDoble(helicoptero));
     }
 
 }

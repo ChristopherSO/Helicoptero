@@ -2,20 +2,19 @@ package com.patrones.helicoptero;
 
 import android.graphics.Canvas;
 
-import framework.CambiadorDeEstados;
-
 /**
  * Created by suarezch on 23/08/2015.
  */
-public class EstadoNormal implements IEstadoHelicoptero {
+public class GravedadNormal implements IGravedad {
 
     // Atributos
     private Helicoptero helicoptero;
 
 
     // Constructor
-    public EstadoNormal(Helicoptero helicoptero) {
+    public GravedadNormal(Helicoptero helicoptero) {
         this.helicoptero = helicoptero;
+        helicoptero.setDyFactor(1);
     }
 
 
