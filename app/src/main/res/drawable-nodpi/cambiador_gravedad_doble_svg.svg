@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="130"
+   height="130"
+   viewBox="0 0 130 130"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="cambiador_gravedad_doble_svg.svg"
+   inkscape:export-filename="C:\Users\suarezch\Google Drive\Mis Proyectos\Helicoptero\app\src\main\res\drawable-nodpi\cambiador_escudo_plus_.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <sodipodi:namedview
+     inkscape:snap-grids="true"
+     id="base"
+     pagecolor="#888888"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="83.030744"
+     inkscape:cy="-4.0746104"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1450"
+     inkscape:window-height="838"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5877">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop5879" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop5881" />
+    </linearGradient>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter5889-1"
+       x="-0.096000008"
+       width="1.192"
+       y="-0.095999993"
+       height="1.192">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.3999993"
+         id="feGaussianBlur5891-7" />
+    </filter>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5877"
+       id="radialGradient5883-0"
+       cx="210"
+       cy="1122.3622"
+       fx="210"
+       fy="1122.3622"
+       r="59.999992"
+       gradientTransform="translate(-145.00001,-135.00024)"
+       gradientUnits="userSpaceOnUse" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter5956"
+       x="-0.0768"
+       width="1.1536"
+       y="-0.128"
+       height="1.256">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.92"
+         id="feGaussianBlur5958" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     style="display:inline"
+     transform="translate(0,-922.36216)"
+     inkscape:label="Fondo"
+     id="layer2"
+     inkscape:groupmode="layer" />
+  <g
+     style="display:inline;opacity:1"
+     transform="translate(0,-922.36216)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Capa 1">
+    <ellipse
+       style="display:inline;opacity:1;fill:#c00000;fill-opacity:1;stroke:#0000ff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse4533-9"
+       cx="64.999992"
+       cy="987.36218"
+       rx="59.999989"
+       ry="59.999992" />
+    <ellipse
+       ry="59.999992"
+       rx="59.999989"
+       cy="987.36218"
+       cx="64.999992"
+       id="ellipse5867-4"
+       style="display:inline;opacity:1;fill:url(#radialGradient5883-0);fill-opacity:1;stroke:#0000ff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4154-1"
+       d="m 51.000004,955.36218 0,30 -16,0 30,30.00002 29.99998,-30.00002 -15.99999,0 0,-30 -27.99999,0 z"
+       style="fill:#000000;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter5889-1)" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 51.000004,955.36218 0,30 -16,0 30,30.00002 29.99998,-30.00002 -15.99999,0 0,-30 -27.99999,0 z"
+       id="path4417-0"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;opacity:1;fill:#c00000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="54.06218"
+       y="992.36218"
+       id="text4529-6-9"
+       sodipodi:linespacing="125%"><tspan
+         id="tspan4336-0-0"
+         sodipodi:role="line"
+         x="54.06218"
+         y="992.36218"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.25px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#c00000;fill-opacity:1">×2</tspan></text>
+    <path
+       id="path5954"
+       d="m 34.999992,991.36218 30,36.00002 30,-36.00002 -30,30.00002 -30,-30.00002 z"
+       style="fill:#000000;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter5956)"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 34.999992,991.36218 30,36.00002 30,-36.00002 -30,30.00002 -30,-30.00002 z"
+       id="path4245-7" />
+  </g>
+</svg>

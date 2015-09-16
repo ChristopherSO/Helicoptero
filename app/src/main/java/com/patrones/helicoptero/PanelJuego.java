@@ -225,47 +225,11 @@ public class PanelJuego extends SurfaceView implements SurfaceHolder.Callback
             // Para cada cambiador...
             for(int i = 0; i< cambiadores.size();i++) {
                 // Update cambiador
-                if (cambiadores.get(i) instanceof CambiadorEscudoSimple) {
-                    ((CambiadorEscudoSimple)cambiadores.get(i)).update();
-                }
-                else if (cambiadores.get(i) instanceof CambiadorGravedadDoble) {
-                    ((CambiadorGravedadDoble)cambiadores.get(i)).update();
-                }
-                else if (cambiadores.get(i) instanceof CambiadorGravedadTriple) {
-                    ((CambiadorGravedadTriple)cambiadores.get(i)).update();
-                }
-                else if (cambiadores.get(i) instanceof CambiadorGravedadCuadruple) {
-                    ((CambiadorGravedadCuadruple)cambiadores.get(i)).update();
-                }
-                else if (cambiadores.get(i) instanceof CambiadorGravedadInversa) {
-                    ((CambiadorGravedadInversa)cambiadores.get(i)).update();
-                }
-                else if (cambiadores.get(i) instanceof CambiadorGravedadNormal) {
-                    ((CambiadorGravedadNormal)cambiadores.get(i)).update();
-                }
+                cambiadores.get(i).update();
 
                 // Comprobar colisión para remover el cambiador
                 if(colision(cambiadores.get(i), helicoptero)) {
-
-                    if (cambiadores.get(i) instanceof CambiadorEscudoSimple) {
-                        ((CambiadorEscudoSimple)cambiadores.get(i)).cambiarEstado(helicoptero);
-                    }
-                    else if (cambiadores.get(i) instanceof CambiadorGravedadDoble) {
-                        ((CambiadorGravedadDoble)cambiadores.get(i)).cambiarEstado(helicoptero);
-                    }
-                    else if (cambiadores.get(i) instanceof CambiadorGravedadCuadruple) {
-                        ((CambiadorGravedadCuadruple)cambiadores.get(i)).cambiarEstado(helicoptero);
-                    }
-                    else if (cambiadores.get(i) instanceof CambiadorGravedadTriple) {
-                        ((CambiadorGravedadTriple)cambiadores.get(i)).cambiarEstado(helicoptero);
-                    }
-                    else if (cambiadores.get(i) instanceof CambiadorGravedadInversa) {
-                        ((CambiadorGravedadInversa)cambiadores.get(i)).cambiarEstado(helicoptero);
-                    }
-                    else if (cambiadores.get(i) instanceof CambiadorGravedadNormal) {
-                        ((CambiadorGravedadNormal)cambiadores.get(i)).cambiarEstado(helicoptero);
-                    }
-
+                    cambiadores.get(i).cambiarEstado(helicoptero);
                     cambiadores.remove(i);
                     break;
                 }

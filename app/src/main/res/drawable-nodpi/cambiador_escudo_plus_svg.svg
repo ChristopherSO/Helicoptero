@@ -1,0 +1,1162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1080"
+   height="90"
+   viewBox="0 0 1080 90"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="cambiador_escudo_plus_svg.svg"
+   inkscape:export-filename="C:\Users\suarezch\Google Drive\Mis Proyectos\Helicoptero\app\src\main\res\drawable-nodpi\cambiador_escudo_plus_.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter6626"
+       x="-0.042982332"
+       width="1.0859647"
+       y="-0.22161134"
+       height="1.4432226">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.91875916"
+         id="feGaussianBlur6628" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter9434"
+       x="-0.23679574"
+       width="1.4735915"
+       y="-0.75046527"
+       height="2.5009305">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="3.1133881"
+         id="feGaussianBlur9436" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#888888"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3"
+     inkscape:cx="142.55717"
+     inkscape:cy="38.791457"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1450"
+     inkscape:window-height="838"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Fondo"
+     transform="translate(0,-962.36216)"
+     style="display:inline" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-962.36216)"
+     style="display:inline;opacity:1">
+    <circle
+       r="35"
+       cy="1007.3622"
+       cx="1035"
+       id="circle6832"
+       style="display:inline;opacity:1;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text6840"
+       y="1018.996"
+       x="1018.1213"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#0000ff;fill-opacity:1"
+         y="1018.996"
+         x="1018.1213"
+         id="tspan6842"
+         sodipodi:role="line">PLUS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9434)"
+       x="1018.1213"
+       y="1018.996"
+       id="text6844"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6846"
+         x="1018.1213"
+         y="1018.996"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#ffffff">PLUS</tspan></text>
+    <g
+       id="g8435"
+       transform="matrix(-0.96592583,-0.25881905,0.25881905,-0.96592583,817.74215,1992.0462)">
+      <path
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 45,1047.3621 a 4.9999943,4.9999948 0 0 0 5,-5 4.9999943,4.9999948 0 0 0 -5,-5 34,30 0 0 1 -34,-30 l -1,0 a 35,40 0 0 0 35,40 z"
+         id="path7043"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 5,1007.3623 a 4.9999948,4.9999943 0 0 0 5,5 4.9999948,4.9999943 0 0 0 5,-5 30,34 0 0 1 30,-34.00012 l 0,-1 A 40,35 0 0 0 5,1007.3623 Z"
+         id="path7033" />
+      <path
+         id="circle6950"
+         d="m 45,967.36216 a 4.9999943,4.9999948 0 0 0 -5,5 4.9999943,4.9999948 0 0 0 5,5 34,30 0 0 1 34,30.00004 l 1,0 A 35,40 0 0 0 45,967.36216 Z"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path7041"
+         d="m 85,1007.362 a 4.9999948,4.9999943 0 0 0 -5,-5 4.9999948,4.9999943 0 0 0 -5,5 30,34 0 0 1 -30,34.0001 l 0,1 a 40,35 0 0 0 40,-35.0001 z"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <ellipse
+         ry="4.9999948"
+         rx="4.9999943"
+         cy="1042.3622"
+         cx="45"
+         id="path7049"
+         style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:#0000ff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g7057"
+       transform="translate(990,-7.1800199)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text7059"
+         y="1012.176"
+         x="18.811646"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold'"
+           y="1012.176"
+           x="18.811646"
+           id="tspan7061"
+           sodipodi:role="line">ESCUDO</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter6626)"
+         x="18.811646"
+         y="1012.176"
+         id="text7063"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan7065"
+           x="18.811646"
+           y="1012.176"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold';fill:#ffffff">ESCUDO</tspan></text>
+    </g>
+    <circle
+       style="display:inline;opacity:1;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle4165"
+       cx="945"
+       cy="1007.3622"
+       r="35" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="928.12134"
+       y="1018.996"
+       id="text4167"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4169"
+         x="928.12134"
+         y="1018.996"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#0000ff;fill-opacity:1">PLUS</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4171"
+       y="1018.996"
+       x="928.12134"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9434)"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#ffffff"
+         y="1018.996"
+         x="928.12134"
+         id="tspan4173"
+         sodipodi:role="line">PLUS</tspan></text>
+    <g
+       id="g4175"
+       transform="matrix(-0.8660254,-0.5,0.5,-0.8660254,480.29006,1902.2634)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4177"
+         d="m 45,1047.3621 a 4.9999943,4.9999948 0 0 0 5,-5 4.9999943,4.9999948 0 0 0 -5,-5 34,30 0 0 1 -34,-30 l -1,0 a 35,40 0 0 0 35,40 z"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path4179"
+         d="m 5,1007.3623 a 4.9999948,4.9999943 0 0 0 5,5 4.9999948,4.9999943 0 0 0 5,-5 30,34 0 0 1 30,-34.00012 l 0,-1 A 40,35 0 0 0 5,1007.3623 Z"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 45,967.36216 a 4.9999943,4.9999948 0 0 0 -5,5 4.9999943,4.9999948 0 0 0 5,5 34,30 0 0 1 34,30.00004 l 1,0 A 35,40 0 0 0 45,967.36216 Z"
+         id="path4181" />
+      <path
+         inkscape:connector-curvature="0"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 85,1007.362 a 4.9999948,4.9999943 0 0 0 -5,-5 4.9999948,4.9999943 0 0 0 -5,5 30,34 0 0 1 -30,34.0001 l 0,1 a 40,35 0 0 0 40,-35.0001 z"
+         id="path4183" />
+      <ellipse
+         style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:#0000ff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="ellipse4185"
+         cx="45"
+         cy="1042.3622"
+         rx="4.9999943"
+         ry="4.9999948" />
+    </g>
+    <g
+       transform="translate(900,-7.1800199)"
+       id="g4187">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="18.811646"
+         y="1012.176"
+         id="text4189"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4191"
+           x="18.811646"
+           y="1012.176"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold'">ESCUDO</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4193"
+         y="1012.176"
+         x="18.811646"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter6626)"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold';fill:#ffffff"
+           y="1012.176"
+           x="18.811646"
+           id="tspan4195"
+           sodipodi:role="line">ESCUDO</tspan></text>
+    </g>
+    <circle
+       r="35"
+       cy="1007.3622"
+       cx="855"
+       id="circle4199"
+       style="display:inline;opacity:1;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4201"
+       y="1018.996"
+       x="838.12134"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#0000ff;fill-opacity:1"
+         y="1018.996"
+         x="838.12134"
+         id="tspan4203"
+         sodipodi:role="line">PLUS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9434)"
+       x="838.12134"
+       y="1018.996"
+       id="text4205"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4207"
+         x="838.12134"
+         y="1018.996"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#ffffff">PLUS</tspan></text>
+    <g
+       id="g4209"
+       transform="matrix(-0.70710678,-0.70710678,0.70710678,-0.70710678,174.50718,1751.4946)">
+      <path
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 45,1047.3621 a 4.9999943,4.9999948 0 0 0 5,-5 4.9999943,4.9999948 0 0 0 -5,-5 34,30 0 0 1 -34,-30 l -1,0 a 35,40 0 0 0 35,40 z"
+         id="path4211"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 5,1007.3623 a 4.9999948,4.9999943 0 0 0 5,5 4.9999948,4.9999943 0 0 0 5,-5 30,34 0 0 1 30,-34.00012 l 0,-1 A 40,35 0 0 0 5,1007.3623 Z"
+         id="path4213" />
+      <path
+         id="path4215"
+         d="m 45,967.36216 a 4.9999943,4.9999948 0 0 0 -5,5 4.9999943,4.9999948 0 0 0 5,5 34,30 0 0 1 34,30.00004 l 1,0 A 35,40 0 0 0 45,967.36216 Z"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path4217"
+         d="m 85,1007.362 a 4.9999948,4.9999943 0 0 0 -5,-5 4.9999948,4.9999943 0 0 0 -5,5 30,34 0 0 1 -30,34.0001 l 0,1 a 40,35 0 0 0 40,-35.0001 z"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <ellipse
+         ry="4.9999948"
+         rx="4.9999943"
+         cy="1042.3622"
+         cx="45"
+         id="ellipse4219"
+         style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:#0000ff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g4221"
+       transform="translate(810,-7.1800199)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4223"
+         y="1012.176"
+         x="18.811646"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold'"
+           y="1012.176"
+           x="18.811646"
+           id="tspan4225"
+           sodipodi:role="line">ESCUDO</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter6626)"
+         x="18.811646"
+         y="1012.176"
+         id="text4227"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4229"
+           x="18.811646"
+           y="1012.176"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold';fill:#ffffff">ESCUDO</tspan></text>
+    </g>
+    <circle
+       style="display:inline;opacity:1;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle4233"
+       cx="765"
+       cy="1007.3622"
+       r="35" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="748.12134"
+       y="1018.996"
+       id="text4235"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4237"
+         x="748.12134"
+         y="1018.996"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#0000ff;fill-opacity:1">PLUS</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4239"
+       y="1018.996"
+       x="748.12134"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9434)"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#ffffff"
+         y="1018.996"
+         x="748.12134"
+         id="tspan4241"
+         sodipodi:role="line">PLUS</tspan></text>
+    <g
+       id="g4243"
+       transform="matrix(-0.5,-0.8660254,0.8660254,-0.5,-84.901229,1550.0144)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4245"
+         d="m 45,1047.3621 a 4.9999943,4.9999948 0 0 0 5,-5 4.9999943,4.9999948 0 0 0 -5,-5 34,30 0 0 1 -34,-30 l -1,0 a 35,40 0 0 0 35,40 z"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path4247"
+         d="m 5,1007.3623 a 4.9999948,4.9999943 0 0 0 5,5 4.9999948,4.9999943 0 0 0 5,-5 30,34 0 0 1 30,-34.00012 l 0,-1 A 40,35 0 0 0 5,1007.3623 Z"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 45,967.36216 a 4.9999943,4.9999948 0 0 0 -5,5 4.9999943,4.9999948 0 0 0 5,5 34,30 0 0 1 34,30.00004 l 1,0 A 35,40 0 0 0 45,967.36216 Z"
+         id="path4249" />
+      <path
+         inkscape:connector-curvature="0"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 85,1007.362 a 4.9999948,4.9999943 0 0 0 -5,-5 4.9999948,4.9999943 0 0 0 -5,5 30,34 0 0 1 -30,34.0001 l 0,1 a 40,35 0 0 0 40,-35.0001 z"
+         id="path4251" />
+      <ellipse
+         style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:#0000ff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="ellipse4253"
+         cx="45"
+         cy="1042.3622"
+         rx="4.9999943"
+         ry="4.9999948" />
+    </g>
+    <g
+       transform="translate(720,-7.1800199)"
+       id="g4255">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="18.811646"
+         y="1012.176"
+         id="text4257"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4259"
+           x="18.811646"
+           y="1012.176"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold'">ESCUDO</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4261"
+         y="1012.176"
+         x="18.811646"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter6626)"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold';fill:#ffffff"
+           y="1012.176"
+           x="18.811646"
+           id="tspan4263"
+           sodipodi:role="line">ESCUDO</tspan></text>
+    </g>
+    <circle
+       r="35"
+       cy="1007.3622"
+       cx="675"
+       id="circle4267"
+       style="display:inline;opacity:1;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4269"
+       y="1018.996"
+       x="658.12134"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#0000ff;fill-opacity:1"
+         y="1018.996"
+         x="658.12134"
+         id="tspan4271"
+         sodipodi:role="line">PLUS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9434)"
+       x="658.12134"
+       y="1018.996"
+       id="text4273"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4275"
+         x="658.12134"
+         y="1018.996"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#ffffff">PLUS</tspan></text>
+    <g
+       id="g4277"
+       transform="matrix(-0.25881905,-0.96592583,0.96592583,-0.25881905,-286.39028,1311.5533)">
+      <path
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 45,1047.3621 a 4.9999943,4.9999948 0 0 0 5,-5 4.9999943,4.9999948 0 0 0 -5,-5 34,30 0 0 1 -34,-30 l -1,0 a 35,40 0 0 0 35,40 z"
+         id="path4279"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 5,1007.3623 a 4.9999948,4.9999943 0 0 0 5,5 4.9999948,4.9999943 0 0 0 5,-5 30,34 0 0 1 30,-34.00012 l 0,-1 A 40,35 0 0 0 5,1007.3623 Z"
+         id="path4281" />
+      <path
+         id="path4283"
+         d="m 45,967.36216 a 4.9999943,4.9999948 0 0 0 -5,5 4.9999943,4.9999948 0 0 0 5,5 34,30 0 0 1 34,30.00004 l 1,0 A 35,40 0 0 0 45,967.36216 Z"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path4285"
+         d="m 85,1007.362 a 4.9999948,4.9999943 0 0 0 -5,-5 4.9999948,4.9999943 0 0 0 -5,5 30,34 0 0 1 -30,34.0001 l 0,1 a 40,35 0 0 0 40,-35.0001 z"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <ellipse
+         ry="4.9999948"
+         rx="4.9999943"
+         cy="1042.3622"
+         cx="45"
+         id="ellipse4287"
+         style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:#0000ff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g4289"
+       transform="translate(630,-7.1800199)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4291"
+         y="1012.176"
+         x="18.811646"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold'"
+           y="1012.176"
+           x="18.811646"
+           id="tspan4293"
+           sodipodi:role="line">ESCUDO</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter6626)"
+         x="18.811646"
+         y="1012.176"
+         id="text4295"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4297"
+           x="18.811646"
+           y="1012.176"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold';fill:#ffffff">ESCUDO</tspan></text>
+    </g>
+    <circle
+       style="display:inline;opacity:1;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle4301"
+       cx="585"
+       cy="1007.3622"
+       r="35" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="568.12134"
+       y="1018.996"
+       id="text4303"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4305"
+         x="568.12134"
+         y="1018.996"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#0000ff;fill-opacity:1">PLUS</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4307"
+       y="1018.996"
+       x="568.12134"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9434)"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#ffffff"
+         y="1018.996"
+         x="568.12134"
+         id="tspan4309"
+         sodipodi:role="line">PLUS</tspan></text>
+    <g
+       id="g4311"
+       transform="matrix(0,-1,1,0,-422.36217,1052.3622)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4313"
+         d="m 45,1047.3621 a 4.9999943,4.9999948 0 0 0 5,-5 4.9999943,4.9999948 0 0 0 -5,-5 34,30 0 0 1 -34,-30 l -1,0 a 35,40 0 0 0 35,40 z"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path4315"
+         d="m 5,1007.3623 a 4.9999948,4.9999943 0 0 0 5,5 4.9999948,4.9999943 0 0 0 5,-5 30,34 0 0 1 30,-34.00012 l 0,-1 A 40,35 0 0 0 5,1007.3623 Z"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 45,967.36216 a 4.9999943,4.9999948 0 0 0 -5,5 4.9999943,4.9999948 0 0 0 5,5 34,30 0 0 1 34,30.00004 l 1,0 A 35,40 0 0 0 45,967.36216 Z"
+         id="path4317" />
+      <path
+         inkscape:connector-curvature="0"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 85,1007.362 a 4.9999948,4.9999943 0 0 0 -5,-5 4.9999948,4.9999943 0 0 0 -5,5 30,34 0 0 1 -30,34.0001 l 0,1 a 40,35 0 0 0 40,-35.0001 z"
+         id="path4319" />
+      <ellipse
+         style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:#0000ff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="ellipse4321"
+         cx="45"
+         cy="1042.3622"
+         rx="4.9999943"
+         ry="4.9999948" />
+    </g>
+    <g
+       transform="translate(540,-7.1800199)"
+       id="g4323">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="18.811646"
+         y="1012.176"
+         id="text4325"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4327"
+           x="18.811646"
+           y="1012.176"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold'">ESCUDO</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4329"
+         y="1012.176"
+         x="18.811646"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter6626)"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold';fill:#ffffff"
+           y="1012.176"
+           x="18.811646"
+           id="tspan4331"
+           sodipodi:role="line">ESCUDO</tspan></text>
+    </g>
+    <circle
+       r="35"
+       cy="1007.3622"
+       cx="495"
+       id="circle4335"
+       style="display:inline;opacity:1;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4337"
+       y="1018.996"
+       x="478.12134"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#0000ff;fill-opacity:1"
+         y="1018.996"
+         x="478.12134"
+         id="tspan4339"
+         sodipodi:role="line">PLUS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9434)"
+       x="478.12134"
+       y="1018.996"
+       id="text4341"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4343"
+         x="478.12134"
+         y="1018.996"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#ffffff">PLUS</tspan></text>
+    <g
+       id="g4345"
+       transform="matrix(0.25881905,-0.96592583,0.96592583,0.25881905,-489.68399,790.10432)">
+      <path
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 45,1047.3621 a 4.9999943,4.9999948 0 0 0 5,-5 4.9999943,4.9999948 0 0 0 -5,-5 34,30 0 0 1 -34,-30 l -1,0 a 35,40 0 0 0 35,40 z"
+         id="path4347"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 5,1007.3623 a 4.9999948,4.9999943 0 0 0 5,5 4.9999948,4.9999943 0 0 0 5,-5 30,34 0 0 1 30,-34.00012 l 0,-1 A 40,35 0 0 0 5,1007.3623 Z"
+         id="path4349" />
+      <path
+         id="path4351"
+         d="m 45,967.36216 a 4.9999943,4.9999948 0 0 0 -5,5 4.9999943,4.9999948 0 0 0 5,5 34,30 0 0 1 34,30.00004 l 1,0 A 35,40 0 0 0 45,967.36216 Z"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path4353"
+         d="m 85,1007.362 a 4.9999948,4.9999943 0 0 0 -5,-5 4.9999948,4.9999943 0 0 0 -5,5 30,34 0 0 1 -30,34.0001 l 0,1 a 40,35 0 0 0 40,-35.0001 z"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <ellipse
+         ry="4.9999948"
+         rx="4.9999943"
+         cy="1042.3622"
+         cx="45"
+         id="ellipse4355"
+         style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:#0000ff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g4357"
+       transform="translate(450,-7.1800199)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4359"
+         y="1012.176"
+         x="18.811646"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold'"
+           y="1012.176"
+           x="18.811646"
+           id="tspan4361"
+           sodipodi:role="line">ESCUDO</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter6626)"
+         x="18.811646"
+         y="1012.176"
+         id="text4363"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4365"
+           x="18.811646"
+           y="1012.176"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold';fill:#ffffff">ESCUDO</tspan></text>
+    </g>
+    <circle
+       style="display:inline;opacity:1;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle4369"
+       cx="405"
+       cy="1007.3622"
+       r="35" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="388.12134"
+       y="1018.996"
+       id="text4371"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4373"
+         x="388.12134"
+         y="1018.996"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#0000ff;fill-opacity:1">PLUS</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4375"
+       y="1018.996"
+       x="388.12134"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9434)"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#ffffff"
+         y="1018.996"
+         x="388.12134"
+         id="tspan4377"
+         sodipodi:role="line">PLUS</tspan></text>
+    <g
+       id="g4379"
+       transform="matrix(0.5,-0.8660254,0.8660254,0.5,-489.90123,542.65223)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4381"
+         d="m 45,1047.3621 a 4.9999943,4.9999948 0 0 0 5,-5 4.9999943,4.9999948 0 0 0 -5,-5 34,30 0 0 1 -34,-30 l -1,0 a 35,40 0 0 0 35,40 z"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path4383"
+         d="m 5,1007.3623 a 4.9999948,4.9999943 0 0 0 5,5 4.9999948,4.9999943 0 0 0 5,-5 30,34 0 0 1 30,-34.00012 l 0,-1 A 40,35 0 0 0 5,1007.3623 Z"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 45,967.36216 a 4.9999943,4.9999948 0 0 0 -5,5 4.9999943,4.9999948 0 0 0 5,5 34,30 0 0 1 34,30.00004 l 1,0 A 35,40 0 0 0 45,967.36216 Z"
+         id="path4385" />
+      <path
+         inkscape:connector-curvature="0"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 85,1007.362 a 4.9999948,4.9999943 0 0 0 -5,-5 4.9999948,4.9999943 0 0 0 -5,5 30,34 0 0 1 -30,34.0001 l 0,1 a 40,35 0 0 0 40,-35.0001 z"
+         id="path4387" />
+      <ellipse
+         style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:#0000ff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="ellipse4389"
+         cx="45"
+         cy="1042.3622"
+         rx="4.9999943"
+         ry="4.9999948" />
+    </g>
+    <g
+       transform="translate(360,-7.1800199)"
+       id="g4391">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="18.811646"
+         y="1012.176"
+         id="text4393"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4395"
+           x="18.811646"
+           y="1012.176"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold'">ESCUDO</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4397"
+         y="1012.176"
+         x="18.811646"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter6626)"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold';fill:#ffffff"
+           y="1012.176"
+           x="18.811646"
+           id="tspan4399"
+           sodipodi:role="line">ESCUDO</tspan></text>
+    </g>
+    <circle
+       r="35"
+       cy="1007.3622"
+       cx="315"
+       id="circle4403"
+       style="display:inline;opacity:1;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4405"
+       y="1018.996"
+       x="298.12134"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#0000ff;fill-opacity:1"
+         y="1018.996"
+         x="298.12134"
+         id="tspan4407"
+         sodipodi:role="line">PLUS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9434)"
+       x="298.12134"
+       y="1018.996"
+       id="text4409"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4411"
+         x="298.12134"
+         y="1018.996"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#ffffff">PLUS</tspan></text>
+    <g
+       id="g4413"
+       transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-429.13243,326.86935)">
+      <path
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 45,1047.3621 a 4.9999943,4.9999948 0 0 0 5,-5 4.9999943,4.9999948 0 0 0 -5,-5 34,30 0 0 1 -34,-30 l -1,0 a 35,40 0 0 0 35,40 z"
+         id="path4415"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 5,1007.3623 a 4.9999948,4.9999943 0 0 0 5,5 4.9999948,4.9999943 0 0 0 5,-5 30,34 0 0 1 30,-34.00012 l 0,-1 A 40,35 0 0 0 5,1007.3623 Z"
+         id="path4417" />
+      <path
+         id="path4419"
+         d="m 45,967.36216 a 4.9999943,4.9999948 0 0 0 -5,5 4.9999943,4.9999948 0 0 0 5,5 34,30 0 0 1 34,30.00004 l 1,0 A 35,40 0 0 0 45,967.36216 Z"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path4421"
+         d="m 85,1007.362 a 4.9999948,4.9999943 0 0 0 -5,-5 4.9999948,4.9999943 0 0 0 -5,5 30,34 0 0 1 -30,34.0001 l 0,1 a 40,35 0 0 0 40,-35.0001 z"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <ellipse
+         ry="4.9999948"
+         rx="4.9999943"
+         cy="1042.3622"
+         cx="45"
+         id="ellipse4423"
+         style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:#0000ff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g4425"
+       transform="translate(270,-7.1800199)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4427"
+         y="1012.176"
+         x="18.811646"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold'"
+           y="1012.176"
+           x="18.811646"
+           id="tspan4429"
+           sodipodi:role="line">ESCUDO</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter6626)"
+         x="18.811646"
+         y="1012.176"
+         id="text4431"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4433"
+           x="18.811646"
+           y="1012.176"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold';fill:#ffffff">ESCUDO</tspan></text>
+    </g>
+    <circle
+       style="display:inline;opacity:1;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle4437"
+       cx="225"
+       cy="1007.3622"
+       r="35" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="208.12134"
+       y="1018.996"
+       id="text4439"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4441"
+         x="208.12134"
+         y="1018.996"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#0000ff;fill-opacity:1">PLUS</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4443"
+       y="1018.996"
+       x="208.12134"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9434)"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#ffffff"
+         y="1018.996"
+         x="208.12134"
+         id="tspan4445"
+         sodipodi:role="line">PLUS</tspan></text>
+    <g
+       id="g4447"
+       transform="matrix(0.8660254,-0.5,0.5,0.8660254,-317.65223,157.46094)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4449"
+         d="m 45,1047.3621 a 4.9999943,4.9999948 0 0 0 5,-5 4.9999943,4.9999948 0 0 0 -5,-5 34,30 0 0 1 -34,-30 l -1,0 a 35,40 0 0 0 35,40 z"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path4451"
+         d="m 5,1007.3623 a 4.9999948,4.9999943 0 0 0 5,5 4.9999948,4.9999943 0 0 0 5,-5 30,34 0 0 1 30,-34.00012 l 0,-1 A 40,35 0 0 0 5,1007.3623 Z"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 45,967.36216 a 4.9999943,4.9999948 0 0 0 -5,5 4.9999943,4.9999948 0 0 0 5,5 34,30 0 0 1 34,30.00004 l 1,0 A 35,40 0 0 0 45,967.36216 Z"
+         id="path4453" />
+      <path
+         inkscape:connector-curvature="0"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 85,1007.362 a 4.9999948,4.9999943 0 0 0 -5,-5 4.9999948,4.9999943 0 0 0 -5,5 30,34 0 0 1 -30,34.0001 l 0,1 a 40,35 0 0 0 40,-35.0001 z"
+         id="path4455" />
+      <ellipse
+         style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:#0000ff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="ellipse4457"
+         cx="45"
+         cy="1042.3622"
+         rx="4.9999943"
+         ry="4.9999948" />
+    </g>
+    <g
+       transform="translate(180,-7.1800199)"
+       id="g4459">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="18.811646"
+         y="1012.176"
+         id="text4461"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4463"
+           x="18.811646"
+           y="1012.176"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold'">ESCUDO</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4465"
+         y="1012.176"
+         x="18.811646"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter6626)"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold';fill:#ffffff"
+           y="1012.176"
+           x="18.811646"
+           id="tspan4467"
+           sodipodi:role="line">ESCUDO</tspan></text>
+    </g>
+    <circle
+       r="35"
+       cy="1007.3622"
+       cx="135"
+       id="circle4471"
+       style="display:inline;opacity:1;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4473"
+       y="1018.996"
+       x="118.12134"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#0000ff;fill-opacity:1"
+         y="1018.996"
+         x="118.12134"
+         id="tspan4475"
+         sodipodi:role="line">PLUS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9434)"
+       x="118.12134"
+       y="1018.996"
+       id="text4477"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4479"
+         x="118.12134"
+         y="1018.996"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#ffffff">PLUS</tspan></text>
+    <g
+       id="g4481"
+       transform="matrix(0.96592583,-0.25881905,0.25881905,0.96592583,-169.19118,45.971891)">
+      <path
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 45,1047.3621 a 4.9999943,4.9999948 0 0 0 5,-5 4.9999943,4.9999948 0 0 0 -5,-5 34,30 0 0 1 -34,-30 l -1,0 a 35,40 0 0 0 35,40 z"
+         id="path4483"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 5,1007.3623 a 4.9999948,4.9999943 0 0 0 5,5 4.9999948,4.9999943 0 0 0 5,-5 30,34 0 0 1 30,-34.00012 l 0,-1 A 40,35 0 0 0 5,1007.3623 Z"
+         id="path4485" />
+      <path
+         id="path4487"
+         d="m 45,967.36216 a 4.9999943,4.9999948 0 0 0 -5,5 4.9999943,4.9999948 0 0 0 5,5 34,30 0 0 1 34,30.00004 l 1,0 A 35,40 0 0 0 45,967.36216 Z"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path4489"
+         d="m 85,1007.362 a 4.9999948,4.9999943 0 0 0 -5,-5 4.9999948,4.9999943 0 0 0 -5,5 30,34 0 0 1 -30,34.0001 l 0,1 a 40,35 0 0 0 40,-35.0001 z"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <ellipse
+         ry="4.9999948"
+         rx="4.9999943"
+         cy="1042.3622"
+         cx="45"
+         id="ellipse4491"
+         style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:#0000ff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g4493"
+       transform="translate(90,-7.1800199)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4495"
+         y="1012.176"
+         x="18.811646"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold'"
+           y="1012.176"
+           x="18.811646"
+           id="tspan4497"
+           sodipodi:role="line">ESCUDO</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter6626)"
+         x="18.811646"
+         y="1012.176"
+         id="text4499"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4501"
+           x="18.811646"
+           y="1012.176"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold';fill:#ffffff">ESCUDO</tspan></text>
+    </g>
+    <circle
+       style="display:inline;opacity:1;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle4505"
+       cx="45"
+       cy="1007.3622"
+       r="35" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="28.121338"
+       y="1018.996"
+       id="text4507"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4509"
+         x="28.121338"
+         y="1018.996"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#0000ff;fill-opacity:1">PLUS</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4511"
+       y="1018.996"
+       x="28.121338"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9434)"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#ffffff"
+         y="1018.996"
+         x="28.121338"
+         id="tspan4513"
+         sodipodi:role="line">PLUS</tspan></text>
+    <g
+       id="g4515">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4517"
+         d="m 45,1047.3621 a 4.9999943,4.9999948 0 0 0 5,-5 4.9999943,4.9999948 0 0 0 -5,-5 34,30 0 0 1 -34,-30 l -1,0 a 35,40 0 0 0 35,40 z"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path4519"
+         d="m 5,1007.3623 a 4.9999948,4.9999943 0 0 0 5,5 4.9999948,4.9999943 0 0 0 5,-5 30,34 0 0 1 30,-34.00012 l 0,-1 A 40,35 0 0 0 5,1007.3623 Z"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         style="display:inline;opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 45,967.36216 a 4.9999943,4.9999948 0 0 0 -5,5 4.9999943,4.9999948 0 0 0 5,5 34,30 0 0 1 34,30.00004 l 1,0 A 35,40 0 0 0 45,967.36216 Z"
+         id="path4521" />
+      <path
+         inkscape:connector-curvature="0"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 85,1007.362 a 4.9999948,4.9999943 0 0 0 -5,-5 4.9999948,4.9999943 0 0 0 -5,5 30,34 0 0 1 -30,34.0001 l 0,1 a 40,35 0 0 0 40,-35.0001 z"
+         id="path4523" />
+      <ellipse
+         style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:#0000ff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="ellipse4525"
+         cx="45"
+         cy="1042.3622"
+         rx="4.9999943"
+         ry="4.9999948" />
+    </g>
+    <g
+       transform="translate(0,-7.1800199)"
+       id="g4527">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="18.811646"
+         y="1012.176"
+         id="text4529"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4531"
+           x="18.811646"
+           y="1012.176"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold'">ESCUDO</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4533"
+         y="1012.176"
+         x="18.811646"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter6626)"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:13.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold';fill:#ffffff"
+           y="1012.176"
+           x="18.811646"
+           id="tspan4535"
+           sodipodi:role="line">ESCUDO</tspan></text>
+    </g>
+  </g>
+</svg>

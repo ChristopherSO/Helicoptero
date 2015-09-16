@@ -16,15 +16,30 @@ public class EscudoSimple extends Escudo {
     public EscudoSimple(Helicoptero helicoptero) {
         super(
                 BitmapFactory.decodeResource(helicoptero.getPanelJuego().getResources(), R.drawable.escudo_simple),
-                90,
-                90,
                 12,
+                90,
+                90,
+                35,
                 helicoptero
         );
     }
 
 
     // Métodos
+    public void update()
+    {
+        getAnimacion().update();
+    }
+
+    public void draw(Canvas canvas) {
+        canvas.drawBitmap(
+                getAnimacion().getImage(),
+                getHelicoptero().getX() - 12,
+                getHelicoptero().getY() - 33,
+                null
+        );
+    }
+
     public void colisionar() {
         this.getHelicoptero().setEscudo(null);
     }

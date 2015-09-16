@@ -1,9 +1,12 @@
 package com.patrones.helicoptero;
 
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Typeface;
+
+import com.patrones.laserlightgame.R;
 
 import framework.CambiadorDeEstados;
 
@@ -14,40 +17,36 @@ public class CambiadorEscudoSimple extends CambiadorDeEstados {
 
     // Constructor
     public CambiadorEscudoSimple(int x, int y, PanelJuego panelJuego) {
-        super(x, 64, 64, 32, 10);
+        super(
+                BitmapFactory.decodeResource(panelJuego.getResources(), R.drawable.cambiador_escudo_simple),
+                12,
+                x,
+                y,
+                90,
+                90,
+                35,
+                8
+        );
 
         // Modificar el "y" para que no se salga de la pantalla abajo
         y = y * (panelJuego.HEIGHT - this.getRadio()*2) / panelJuego.HEIGHT;
         this.setY(y);
-
-        // Para el texto
-        Paint fuenteTexto = new Paint();
-        fuenteTexto.setColor(Color.BLUE);
-        fuenteTexto.setTextSize(12);
-        fuenteTexto.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.BOLD));
-        this.setFuenteTexto(fuenteTexto);
-
-        // Para el círculo
-        Paint estiloCirculo = new Paint();
-        estiloCirculo.setColor(Color.YELLOW);
-        estiloCirculo.setStyle(Paint.Style.FILL_AND_STROKE);
-        this.setEstiloCirculo(estiloCirculo);
     }
 
 
     // Métodos
-    public void update()
-    {
-        super.update(this.getVelocidad());
+    public void update() {
+        this.x -= this.getVelocidad();
+        getAnimacion().update();
     }
 
     public void draw(Canvas canvas) {
-
-        // Dibujar círculo
-        canvas.drawCircle(x + this.getRadio(), y + this.getRadio(), this.getRadio(), this.getEstiloCirculo());
-
-        // Dibujar texto
-        canvas.drawText("ESCUDO", x + 7, y + 37, this.getFuenteTexto());
+        canvas.drawBitmap(
+                getAnimacion().getImage(),
+                this.getX(),
+                this.getY(),
+                null
+        );
     }
 
     public void cambiarEstado(Helicoptero helicoptero) {

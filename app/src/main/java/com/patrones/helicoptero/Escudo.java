@@ -14,12 +14,12 @@ public abstract class Escudo extends ObjetoVolador {
     // Atributos
     private Bitmap grafico;
     private Animacion animacion;
+    private int radio;
     private Helicoptero helicoptero;
 
 
     // Constructor
-    public Escudo(Bitmap grafico, int w, int h, int cantFotogramas, Helicoptero helicoptero) {
-
+    public Escudo(Bitmap grafico, int cantFotogramas, int w, int h, int radio, Helicoptero helicoptero) {
         super.width = w;
         super.height = h;
 
@@ -28,34 +28,27 @@ public abstract class Escudo extends ObjetoVolador {
         for(int i = 0; i<image.length;i++) {
             image[i] = Bitmap.createBitmap(this.grafico, i*width, 0, width, height);
         }
-        animacion = new Animacion(image);
-
+        this.animacion = new Animacion(image);
+        this.radio = radio;
         this.helicoptero = helicoptero;
     }
 
 
     // Métodos
-    public void update()
-    {
-        animacion.update();
-    }
+    public abstract void update();
+    public abstract void draw(Canvas canvas);
+    public abstract void colisionar();
 
-    public void draw(Canvas canvas) {
-        canvas.drawBitmap(
-                animacion.getImage(),
-                helicoptero.getX() - 12,
-                helicoptero.getY() - 33,
-                null);
-    }
 
+    // Obtenedores y Modificadores
     public Animacion getAnimacion() {
-        return this.animacion;
+        return  this.animacion;
     }
-
+    public int getRadio() {
+        return this.radio;
+    }
     public Helicoptero getHelicoptero() {
         return this.helicoptero;
     }
-
-    public abstract void colisionar();
 
 }
